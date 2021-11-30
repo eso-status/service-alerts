@@ -22,7 +22,7 @@ npm i @eso-status/service-alerts
 ### How to use it ?
 - TypeScript
 ```typescript
-import { RawEsoStatus } from '@eso-status/types-dev';
+import { RawEsoStatus } from '@eso-status/types';
 import { ServiceAlerts } from "@eso-status/service-alerts";
 
 ServiceAlerts.getData().then((data: RawEsoStatus[]): void => {

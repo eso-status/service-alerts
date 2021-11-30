@@ -32,14 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:eso-status/service-alerts-dev.git"
+    "url": "git@github.com:eso-status/service-alerts.git"
   },
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eso-status/service-alerts-dev/issues"
+    "url": "https://github.com/eso-status/service-alerts/issues"
   },
-  "homepage": "https://github.com/eso-status/service-alerts-dev#readme",
+  "homepage": "https://github.com/eso-status/service-alerts#readme",
   "devDependencies": {
     "@eso-status/types": "1.0.0",
     "@types/jest": "^27.0.3",
