@@ -1,0 +1,43 @@
+# GitHub Actions workflow
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions
+
+name: CD
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - "master"
+
+jobs:
+  deploy:
+    name: Publish to NPM
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: true
+      matrix:
+        os:
+          - ubuntu-latest
+        node:
+          - 16.x
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+
+      - name: Install Node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the code
+        run: npm run build
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: "public"
