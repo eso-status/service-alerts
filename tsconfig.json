@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "ES2020",
+    ],
+    "types": [
+      "node",
+      "jest",
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

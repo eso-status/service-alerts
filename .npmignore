@@ -1,0 +1,11 @@
+.idea
+node_modules
+src
+tests
+.eslintrc.js
+.gitignore
+.npmignore
+jest.config.js
+nodemon.json
+package-lock.json
+tsconfig.json

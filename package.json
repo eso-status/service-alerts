@@ -1,0 +1,63 @@
+{
+  "name": "@eso-status/service-alerts",
+  "version": "1.0.0",
+  "description": "Library used to get servers status of The elders scrolls Online game with https://help.elderscrollsonline.com/app/answers/detail/a_id/4320",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint tests src --ext .ts",
+    "lint:fix": "eslint tests src --ext .ts --fix",
+    "build": "rm -R -f lib/* && tsc",
+    "test": "jest",
+    "start": "node .",
+    "dev": "npm run lint && npm run build && npm run start",
+    "dev:test": "npm run lint && npm run build && npm run test",
+    "watch": "nodemon --exec npm run dev",
+    "watch:test": "nodemon --exec npm run dev:test"
+  },
+  "files": [
+    "lib/classes/ServiceAlertsElement.d.ts",
+    "lib/classes/ServiceAlertsElement.js",
+    "lib/connectors/ServiceAlertConnector.d.ts",
+    "lib/connectors/ServiceAlertConnector.js",
+    "lib/index.d.ts",
+    "lib/index.js",
+    ".npmrc",
+    "LICENSE.md",
+    "package.json",
+    "README.md"
+  ],
+  "engineStrict": true,
+  "engines": {
+    "node": "^10.18.0 || ^12.14.0 || >=14.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eso-status/service-alerts-dev.git"
+  },
+  "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eso-status/service-alerts-dev/issues"
+  },
+  "homepage": "https://github.com/eso-status/service-alerts-dev#readme",
+  "devDependencies": {
+    "@eso-status/types": "1.0.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "16.11.11",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "@typescript-eslint/typescript-estree": "5.5.0",
+    "eslint": "8.3.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jest": "25.3.0",
+    "jest": "27.4.2",
+    "nodemon": "2.0.15",
+    "ts-jest": "27.0.7",
+    "typescript": "4.5.2"
+  },
+  "dependencies": {
+    "axios": "0.24.0",
+    "moment": "2.29.1"
+  }
+}

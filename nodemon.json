@@ -1,0 +1,11 @@
+{
+  "ignore": [
+    "node_modules/*",
+    "lib/*"
+  ],
+  "watch": [
+    "src/*",
+    "tests/*"
+  ],
+  "ext": "ts"
+}
