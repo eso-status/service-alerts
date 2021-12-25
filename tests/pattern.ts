@@ -1010,6 +1010,24 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
       status: 'up',
     },
   },
+  {
+    rawDate: '2021.12.15 - 19:30 UTC (14:30 EST)',
+    rawData: 'We are currently investigating issues with the ESO Store and Account System.',
+    result: {
+      date: moment()
+        .utc()
+        .set('years', 2021)
+        .set('months', 12)
+        .set('date', 15)
+        .set('hours', 19)
+        .set('minutes', 30)
+        .set('seconds', 0)
+        .set('milliseconds', 0)
+        .utcOffset(0),
+      slug: ['service_store_eso', 'service_system_account'],
+      status: 'issues',
+    },
+  },
 ];
 
 /**
