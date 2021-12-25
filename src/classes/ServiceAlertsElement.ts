@@ -144,7 +144,9 @@ export default class ServiceAlertsElement {
                 || rawData.includes('Forums')
                 || rawData.includes('Crown Store')
                 || rawData.includes('ESO store')
-                || rawData.includes('account system');
+                || rawData.includes('ESO Store')
+                || rawData.includes('account system')
+                || rawData.includes('Account System');
     }
 
     return false;
@@ -182,9 +184,11 @@ export default class ServiceAlertsElement {
                 || rawData.includes('Forums');
     } if (support === 'store') {
       return rawData.includes('Crown Store')
-                || rawData.includes('ESO store');
+                || rawData.includes('ESO store')
+                || rawData.includes('ESO Store');
     } if (support === 'system') {
-      return rawData.includes('account system');
+      return rawData.includes('account system')
+                || rawData.includes('Account System');
     }
 
     return false;
@@ -222,9 +226,11 @@ export default class ServiceAlertsElement {
     } if (zone === 'crown') {
       return rawData.includes('Crown Store');
     } if (zone === 'eso') {
-      return rawData.includes('ESO store');
+      return rawData.includes('ESO store')
+                || rawData.includes('ESO Store');
     } if (zone === 'account') {
-      return rawData.includes('account system');
+      return rawData.includes('account system')
+                || rawData.includes('Account System');
     }
 
     return false;
