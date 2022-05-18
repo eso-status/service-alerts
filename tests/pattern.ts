@@ -232,7 +232,7 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
   },
   {
     rawDate: '2021.07.08 - 10:00 UTC (6:00 EDT)',
-    rawData: 'The North American Xbox megaserver is currently unavailable while we perform maintenance.',
+    rawData: 'The North American Xbox megaserver is currently unavailable while we perform maintenance. ',
     result: {
       date: moment()
         .utc()
@@ -268,7 +268,7 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
   },
   {
     rawDate: '2021.07.08 - 10:00 UTC (6:00 EDT)',
-    rawData: 'The North American PlayStation® megaserver is currently unavailable while we perform maintenance.',
+    rawData: 'The North American PlayStation® megaserver is currently unavailable while we perform maintenance. ',
     result: {
       date: moment()
         .utc()
@@ -601,7 +601,7 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
   },
   {
     rawDate: '2021.03.31 - 19:30 UTC (15:30 EDT)',
-    rawData: 'The issues related to logging in to the megaservers have been resolved at this time.',
+    rawData: 'The issues related to logging in to the megaservers have been resolved at this time. ',
     result: {
       date: moment()
         .utc()
@@ -1026,6 +1026,42 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
         .utcOffset(0),
       slug: ['service_store_eso', 'service_system_account'],
       status: 'issues',
+    },
+  },
+  {
+    rawDate: '2022.01.27 - 19:30 UTC (14:30 EST)',
+    rawData: 'The ESO store is currently unavailable while we perform maintenance.',
+    result: {
+      date: moment()
+        .utc()
+        .set('years', 2022)
+        .set('months', 1)
+        .set('date', 27)
+        .set('hours', 19)
+        .set('minutes', 30)
+        .set('seconds', 0)
+        .set('milliseconds', 0)
+        .utcOffset(0),
+      slug: ['service_store_eso'],
+      status: 'down',
+    },
+  },
+  {
+    rawDate: '2022.01.27 - 20:30 UTC (15:30 EST)',
+    rawData: 'The ESO store is currently available.',
+    result: {
+      date: moment()
+        .utc()
+        .set('years', 2022)
+        .set('months', 1)
+        .set('date', 27)
+        .set('hours', 20)
+        .set('minutes', 30)
+        .set('seconds', 0)
+        .set('milliseconds', 0)
+        .utcOffset(0),
+      slug: ['service_store_eso'],
+      status: 'up',
     },
   },
 ];
