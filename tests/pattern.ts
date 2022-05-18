@@ -601,7 +601,7 @@ export const serviceAlertsPattern: {rawDate: string, rawData: string, result: {d
   },
   {
     rawDate: '2021.03.31 - 19:30 UTC (15:30 EDT)',
-    rawData: 'The issues related to logging in to the megaservers have been resolved at this time.',
+    rawData: 'The issues related to logging in to the megaservers have been resolved at this time. ',
     result: {
       date: moment()
         .utc()
