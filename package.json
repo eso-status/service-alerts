@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/service-alerts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Library used to get servers status of The elders scrolls Online game with https://help.elderscrollsonline.com/app/answers/detail/a_id/4320",
   "main": "lib/index.js",
   "scripts": {
