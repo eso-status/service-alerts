@@ -1,0 +1,29 @@
+#!/bin/sh
+
+line=`grep "version" package.json`
+split1=(${line//\"version\": \"/ })
+split2=(${split1//\",/ })
+version=${split2[0]}
+split3=(${version//./ })
+minorReleaseNumber=${split3[${#split3[@]} - 1]}
+separator="."
+nextVersion="${split3[0]}$separator${split3[1]}$separator$((minorReleaseNumber + 1))"
+
+sed -i -e "1,/$version/s/$version/$nextVersion/" package.json
+rm -r -f package.json-e
+sed -i -e "1,/$version/s/$version/$nextVersion/" package-lock.json
+sed -i -e "2,/$version/s/$version/$nextVersion/" package-lock.json
+rm -r -f package-lock.json-e
+
+#npm version patch
+
+git add package.json
+git add package-lock.json
+
+git stash -q --keep-index
+
+status=$?
+
+git stash pop -q
+
+exit $status
