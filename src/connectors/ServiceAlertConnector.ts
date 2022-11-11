@@ -1,9 +1,11 @@
-import axios, { AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import {
   Slug,
   RawEsoStatus,
 } from '@eso-status/types';
 import ServiceAlertsElement from '../classes/ServiceAlertsElement';
+
+const axios = require('axios');
 
 /**
  * Connector used to get data from https://help.elderscrollsonline.com/app/answers/detail/a_id/4320
@@ -28,6 +30,7 @@ export default class ServiceAlertConnector {
      * @return Promise<string> Raw content of the remote website
      */
   public static async getRemoteContent(): Promise<string> {
+    // @ts-ignore
     const response: AxiosResponse<string> = await axios.get<string>(ServiceAlertConnector.url);
     if (response?.status !== 200) {
       throw new Error(`Bad response ${response?.status} (${response?.data})`);

@@ -1,4 +1,4 @@
-import { RawEsoStatus } from '@eso-status/types';
+import { RawEsoStatus, Slug } from '@eso-status/types';
 import ServiceAlertConnector from '../src/connectors/ServiceAlertConnector';
 
 describe('ServiceAlertConnector', (): void => {
@@ -35,7 +35,7 @@ describe('ServiceAlertConnector', (): void => {
   });
 
   it('changeFilterContentForList', (): void => {
-    expect(filteredContentList !== []).toEqual(true);
+    expect(filteredContentList.length !== 0).toEqual(true);
 
     filteredContentList.forEach((item: string): void => {
       expect(item.includes('</p>')).toEqual(true);
@@ -43,7 +43,7 @@ describe('ServiceAlertConnector', (): void => {
   });
 
   it('getRawData', (): void => {
-    expect(rawData !== []).toEqual(true);
+    expect(rawData.length !== 0).toEqual(true);
 
     rawData.forEach((item: {raw: string, rawDate: string, rawData: string[]}): void => {
       expect(item.raw !== '').toEqual(true);
@@ -53,28 +53,28 @@ describe('ServiceAlertConnector', (): void => {
   });
 
   it('splitRawData', (): void => {
-    expect(splitRawData !== []).toEqual(true);
+    expect(splitRawData.length !== 0).toEqual(true);
   });
 
   it('getSlugOfSplitRawData', (): void => {
-    expect(splitRawDataWithSlug !== []).toEqual(true);
+    expect(splitRawDataWithSlug.length !== 0).toEqual(true);
     splitRawDataWithSlug.forEach((item: RawEsoStatus): void => {
-      expect(item.slugs !== []).toEqual(true);
+      expect((<Slug[]>item.slugs).length !== 0).toEqual(true);
     });
   });
 
   it('splitRawDataList', (): void => {
-    expect(splitRawDataList !== []).toEqual(true);
+    expect(splitRawDataList.length !== 0).toEqual(true);
     splitRawDataList.forEach((item: RawEsoStatus): void => {
-      expect(item.slugs !== []).toEqual(true);
+      expect((<Slug[]>item.slugs).length !== 0).toEqual(true);
     });
   });
 
   it('getLastRawData', (): void => {
-    expect(lastRawData !== []).toEqual(true);
+    expect(lastRawData.length !== 0).toEqual(true);
   });
 
   it('getData', (): void => {
-    expect(data !== []).toEqual(true);
+    expect(data.length !== 0).toEqual(true);
   });
 });
