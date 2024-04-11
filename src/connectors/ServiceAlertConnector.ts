@@ -74,7 +74,9 @@ export default class ServiceAlertConnector {
      */
   public static changeFilterContentForList(filteredContent: string): string[] {
     return filteredContent
-      .split('<hr />')
+      .replace('<hr />', '<hr>')
+      .replace('<hr />\n', '<hr>')
+      .split('<hr>')
       .filter((item: string): boolean => !item.includes('&nbsp;'));
   }
 
