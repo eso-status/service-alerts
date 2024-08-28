@@ -22,13 +22,13 @@ jobs:
         os:
           - ubuntu-latest
         node:
-          - 20
+          - 20.17.0
     steps:
       - name: Checkout source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.7
 
       - name: Install Node ${{ matrix.node }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4.0.3
         with:
           node-version: ${{ matrix.node }}
 
@@ -39,7 +39,7 @@ jobs:
         run: npm run build
 
       - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@v1
+        uses: JS-DevTools/npm-publish@v3.1.1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: "public"
