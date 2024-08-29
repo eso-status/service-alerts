@@ -8,9 +8,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-13T12_16_34.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time. ',
         ],
@@ -36,9 +34,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time. ',
         ],
@@ -64,9 +60,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -92,9 +86,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -120,9 +112,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -148,9 +138,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -176,9 +164,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -204,9 +190,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -232,9 +216,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -266,9 +248,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-19T08_06_07.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 8:00 UTC (4:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -294,9 +274,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 8:00 UTC (4:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -322,9 +300,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -350,9 +326,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -378,9 +352,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -406,9 +378,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -434,9 +404,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -462,9 +430,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -490,9 +456,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -524,9 +488,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-19T16_12_04.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -552,9 +514,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 8:00 UTC (4:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -580,9 +540,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -608,9 +566,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -636,9 +592,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -664,9 +618,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -692,9 +644,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -720,9 +670,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -748,9 +696,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -782,9 +728,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-19T17_12_44.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -810,9 +754,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -838,9 +780,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -866,9 +806,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
@@ -894,9 +832,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'been resolved',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -922,9 +858,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -950,9 +884,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -978,9 +910,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1006,9 +936,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1040,9 +968,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-21T10_04_07.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -1068,9 +994,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -1096,9 +1020,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -1124,9 +1046,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
@@ -1152,9 +1072,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -1180,9 +1098,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -1208,9 +1124,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1236,9 +1150,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1264,9 +1176,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1298,9 +1208,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-21T11_50_52.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1326,9 +1234,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1354,9 +1260,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1382,9 +1286,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1410,9 +1312,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -1438,9 +1338,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -1466,9 +1364,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1494,9 +1390,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1522,9 +1416,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1556,9 +1448,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-22T13_01_14.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 13:00 UTC (9:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
         ],
@@ -1584,9 +1474,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 13:00 UTC (9:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
         ],
@@ -1612,9 +1500,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1640,9 +1526,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1668,9 +1552,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1696,9 +1578,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1724,9 +1604,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -1752,9 +1630,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -1780,9 +1656,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -1814,9 +1688,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-22T14_42_10.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -1842,9 +1714,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -1870,9 +1740,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1898,9 +1766,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1926,9 +1792,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1954,9 +1818,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -1982,9 +1844,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -2010,9 +1870,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -2038,9 +1896,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         ],
@@ -2072,9 +1928,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-27T14_02_06.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.27 - 14:00 UTC (10:00 EDT) The PTS is currently unavailable while we perform maintenance.',
         ],
@@ -2100,9 +1954,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently unavailable',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -2128,9 +1980,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -2156,9 +2006,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2184,9 +2032,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2212,9 +2058,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2240,9 +2084,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2268,9 +2110,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -2296,9 +2136,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
@@ -2330,9 +2168,7 @@ const pattern: PatternItem[] = [
     file: '2024-08-27T14_44_07.html',
     expected: [
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.27 - 14:40 UTC (10:40 EDT) The PTS is currently available.',
         ],
@@ -2358,9 +2194,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -2386,9 +2220,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
         ],
@@ -2414,9 +2246,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2442,9 +2272,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2470,9 +2298,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2498,9 +2324,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         ],
@@ -2526,9 +2350,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
         ],
@@ -2554,9 +2376,7 @@ const pattern: PatternItem[] = [
         rawStatus: 'currently available',
       },
       {
-        sources: [
-          'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-        ],
+        sources: [ServiceAlertsUrl],
         raw: [
           '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
         ],
