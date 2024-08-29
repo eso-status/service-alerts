@@ -1,11 +1,11 @@
 {
   "ignore": [
     "node_modules/*",
-    "lib/*"
+    "index.js",
+    "index.d.ts"
   ],
   "watch": [
-    "src/*",
-    "tests/*"
+    "src/*"
   ],
   "ext": "ts"
 }
