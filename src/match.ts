@@ -1,8 +1,8 @@
 import { RawEsoStatus, Slug } from '@eso-status/types';
-import SlugIdentifier from './identifier/slug.identifier';
 import ServiceAlertsUrl from './const';
 import StatusIdentifier from './identifier/status.identifier';
 import DateFormatter from './formatter/date.formatter';
+import SlugMatch from './identifier/slug.match';
 
 export default class Match {
   public slug: Slug;
@@ -11,21 +11,21 @@ export default class Match {
     private readonly raw: string,
     private readonly statusIdentifier: StatusIdentifier,
     private readonly dateFormatter: DateFormatter,
-    private readonly slugIdentified: SlugIdentifier,
+    private readonly slugMatch: SlugMatch,
   ) {
-    this.slug = slugIdentified.slug;
+    this.slug = slugMatch.slug;
   }
 
   public getRawEsoStatus(): RawEsoStatus {
     const rawEsoStatus: RawEsoStatus = {
       sources: [ServiceAlertsUrl],
       raw: [this.raw],
-      slugs: [this.slugIdentified.slug],
-      type: this.slugIdentified.getType(),
-      support: this.slugIdentified.getSupport(),
-      zone: this.slugIdentified.getZone(),
+      slugs: [this.slugMatch.slug],
+      type: this.slugMatch.getType(),
+      support: this.slugMatch.getSupport(),
+      zone: this.slugMatch.getZone(),
       status: this.statusIdentifier.status,
-      rawSlug: this.slugIdentified.rawSlug,
+      rawSlug: this.slugMatch.rawSlug,
     };
 
     if (this.dateFormatter.rawDate) {

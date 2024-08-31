@@ -1,15 +1,15 @@
 import StatusIdentifier from './identifier/status.identifier';
 import DateFormatter from './formatter/date.formatter';
-import SlugsIdentifier from './identifier/slugs.identifier';
 import SlugIdentifier from './identifier/slug.identifier';
 import Match from './match';
+import SlugMatch from './identifier/slug.match';
 
 export default class Raw {
   public statusIdentifier: StatusIdentifier;
 
   public dateFormatter: DateFormatter;
 
-  public slugsIdentifier: SlugsIdentifier;
+  public slugsIdentifier: SlugIdentifier;
 
   public matches: Match[] = [];
 
@@ -18,7 +18,7 @@ export default class Raw {
 
     this.statusIdentifier = new StatusIdentifier(this.raw);
     this.dateFormatter = new DateFormatter(this.raw);
-    this.slugsIdentifier = new SlugsIdentifier(this.raw);
+    this.slugsIdentifier = new SlugIdentifier(this.raw);
 
     this.split();
   }
@@ -38,17 +38,17 @@ export default class Raw {
   }
 
   private split(): void {
-    this.matches = this.slugsIdentifier.slugIdentified.map(
-      (slugIdentified: SlugIdentifier): Match => this.getMatch(slugIdentified),
+    this.matches = this.slugsIdentifier.slugMatches.map(
+      (slugMatch: SlugMatch): Match => this.getMatch(slugMatch),
     );
   }
 
-  private getMatch(slugIdentified: SlugIdentifier): Match {
+  private getMatch(slugMatch: SlugMatch): Match {
     return new Match(
       this.raw,
       this.statusIdentifier,
       this.dateFormatter,
-      slugIdentified,
+      slugMatch,
     );
   }
 }
