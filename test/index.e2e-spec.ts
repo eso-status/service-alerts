@@ -23,7 +23,7 @@ describe('ForumMessage (e2e)', (): void => {
           },
         );
 
-      expect(await ServiceAlerts.getData()).toEqual(patternData.expected);
+      expect(await ServiceAlerts.getData()).toStrictEqual(patternData.expected);
     },
   );
 

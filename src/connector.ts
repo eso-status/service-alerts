@@ -56,8 +56,10 @@ export default class Connector {
   private cleanRaw(): void {
     this.raw = this.raw.map((raw: string): string => {
       let rawReplace: string = raw.replaceAll(/\n/g, '');
+      rawReplace = rawReplace.replaceAll(' </p><p>', ' ');
       rawReplace = rawReplace.replaceAll('</p><p>', ' ');
       rawReplace = rawReplace.replaceAll('  <p>', '');
+      rawReplace = rawReplace.replaceAll(' </p>', '');
       rawReplace = rawReplace.replaceAll(' <p>', '');
       rawReplace = rawReplace.replaceAll('<p>', '');
       rawReplace = rawReplace.replaceAll('</p>', '');

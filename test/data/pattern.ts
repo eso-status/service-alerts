@@ -10,7 +10,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time. ',
+          '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
         slugs: ['server_xbox_eu'],
         type: 'server',
@@ -36,7 +36,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time. ',
+          '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         ],
         slugs: ['server_xbox_na'],
         type: 'server',
@@ -970,7 +970,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
         slugs: ['server_ps_eu'],
         type: 'server',
@@ -996,7 +996,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
         slugs: ['server_xbox_eu'],
         type: 'server',
@@ -1022,7 +1022,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
         slugs: ['server_ps_na'],
         type: 'server',
@@ -1048,7 +1048,7 @@ const pattern: PatternItem[] = [
       {
         sources: [ServiceAlertsUrl],
         raw: [
-          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance.  The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance.  The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+          '2024.08.21 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         ],
         slugs: ['server_xbox_na'],
         type: 'server',
