@@ -16,7 +16,8 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4.1.7
 
-      - uses: actions/setup-node@v4.0.3
+      - name: Install node
+        uses: actions/setup-node@v4.0.3
         with:
           node-version: 20.17.0
 
@@ -32,11 +33,11 @@ jobs:
           exist=`git tag -l ${{ steps.get_version.outputs.version }} | wc -l`
           echo "exist=$exist" >> $GITHUB_OUTPUT
 
-      - name: Install dependencies
+      - name: Install npm dependencies
         if: steps.tag_exist.outputs.exist == 0
         run: npm ci
 
-      - name: Build the code
+      - name: Build
         if: steps.tag_exist.outputs.exist == 0
         run: npm run build
 
