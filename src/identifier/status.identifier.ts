@@ -26,18 +26,24 @@ export default class StatusIdentifier {
   ];
 
   constructor(private readonly raw: string) {
-    this.statusList.forEach((status: Status): void => {
-      const matchesList: RemoteRawStatus[] = <RemoteRawStatus[]>(
-        this[`${status}MatchesList`]
-      );
+    this.statusList.forEach((status: Status): void => this.identify(status));
+  }
 
-      const matches: RemoteRawStatus[] = matchesList.filter(
-        (identifier: RemoteRawStatus): boolean => this.raw.includes(identifier),
-      );
-      if (matches.length > 0) {
-        this.rawStatus = matches.shift();
-        this.status = status;
-      }
-    });
+  private getMatchList(status: Status): RemoteRawStatus[] {
+    return <RemoteRawStatus[]>this[`${status}MatchesList`];
+  }
+
+  private getMatches(status: Status): RemoteRawStatus[] {
+    return this.getMatchList(status).filter(
+      (identifier: RemoteRawStatus): boolean => this.raw.includes(identifier),
+    );
+  }
+
+  private identify(status: Status): void {
+    const matches: RemoteRawStatus[] = this.getMatches(status);
+    if (matches.length > 0) {
+      this.rawStatus = matches.shift();
+      this.status = status;
+    }
   }
 }

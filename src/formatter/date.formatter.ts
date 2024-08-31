@@ -25,40 +25,28 @@ export default class DateFormatter {
 
   private getRawDate(): string {
     if (this.raw.includes('))')) {
-      const split: string[] = this.raw.split('))');
-      return `${split[0]})`;
+      return `${this.raw.split('))')[0]})`;
     }
-    const split: string[] = this.raw.split(')');
-    return `${split[0]})`;
+    return `${this.raw.split(')')[0]})`;
   }
 
   private getYear(): number {
-    const split: string[] = this.rawDate.split('.');
-    return Number(split[0]);
+    return Number(this.rawDate.split('.')[0]);
   }
 
   private getMonth(): number {
-    const split: string[] = this.rawDate.split('.');
-    return Number(split[1]);
+    return Number(this.rawDate.split('.')[1]);
   }
 
   private getDay(): number {
-    const split: string[] = this.rawDate.split('.');
-    const split1: string[] = split[2].split(' ');
-    return Number(split1[0]);
+    return Number(this.rawDate.split('.')[2].split(' ')[0]);
   }
 
   private getHour(): number {
-    const split: string[] = this.rawDate.split(':');
-    const split1: string[] = split[0].split(' ');
-
-    return Number(split1[2]);
+    return Number(this.rawDate.split(':')[0].split(' ')[2]);
   }
 
   private getMinute(): number {
-    const split: string[] = this.rawDate.split(' UTC');
-    const split1: string[] = split[0].split(':');
-
-    return Number(split1[1]);
+    return Number(this.rawDate.split(' UTC')[0].split(':')[1]);
   }
 }

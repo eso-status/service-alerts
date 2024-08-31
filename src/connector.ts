@@ -1,10 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
-import { RawEsoStatus, Slug, Support, Type, Zone } from '@eso-status/types';
-import { SlugIdentify } from './interface/slugIdentify.interface';
-import SlugIdentifier from './identifier/slug.identifier';
+import { RawEsoStatus, Slug } from '@eso-status/types';
 import StatusIdentifier from './identifier/status.identifier';
 import DateFormatter from './formatter/date.formatter';
 import ServiceAlertsUrl from './const';
+import SlugsIdentifier from './identifier/slugs.identifier';
+import SlugIdentifier from './identifier/slug.identifier';
 
 export default class Connector {
   private raw: string[];
@@ -13,9 +13,12 @@ export default class Connector {
 
   private rawContent: string;
 
+  private alreadyGet: Slug[];
+
   constructor(private readonly remoteContent: string) {
     this.raw = [];
     this.rawEsoStatus = [];
+    this.alreadyGet = [];
 
     if (this.remoteContent !== '') {
       this.getRawContent();
@@ -39,12 +42,10 @@ export default class Connector {
   }
 
   private getRawContent(): void {
-    const split: string[] = this.remoteContent.split(
-      '<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->',
-    );
-    const split1: string[] = split[1].split('</div>');
-
-    this.rawContent = split1.shift();
+    this.rawContent = this.remoteContent
+      .split('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')[1]
+      .split('</div>')
+      .shift();
   }
 
   private getRaw(): void {
@@ -68,39 +69,39 @@ export default class Connector {
     });
   }
 
-  public getData(): void {
-    const alreadyGet: Slug[] = [];
-    this.raw.forEach((raw: string): void => {
-      const statusIdentifier: StatusIdentifier = new StatusIdentifier(raw);
-      const slugIdentifier: SlugIdentifier = new SlugIdentifier(raw);
-      const dateFormatter: DateFormatter = new DateFormatter(raw);
+  private getData(): void {
+    this.raw.forEach((raw: string): void => this.generateRaw(raw));
+  }
 
-      slugIdentifier.slugIdentified.forEach(
-        (slugIdentify: SlugIdentify): void => {
-          const rawEsoStatus: RawEsoStatus = {
-            sources: [ServiceAlertsUrl],
-            raw: [raw],
-            slugs: [slugIdentify.slug],
-            type: <Type>slugIdentify.slug.split('_')[0],
-            support: <Support>slugIdentify.slug.split('_')[1],
-            zone: <Zone>slugIdentify.slug.split('_')[2],
-            status: statusIdentifier.status,
-            rawSlug: slugIdentify.rawSlug,
-          };
+  private generateRaw(raw: string): void {
+    const statusIdentifier: StatusIdentifier = new StatusIdentifier(raw);
+    const dateFormatter: DateFormatter = new DateFormatter(raw);
 
-          if (dateFormatter.rawDate !== undefined) {
-            rawEsoStatus.rawDate = dateFormatter.rawDate;
-            rawEsoStatus.dates = dateFormatter.dates;
-          }
-          if (statusIdentifier.rawStatus !== undefined) {
-            rawEsoStatus.rawStatus = statusIdentifier.rawStatus;
-          }
-          if (!alreadyGet.includes(slugIdentify.slug)) {
-            this.rawEsoStatus.push(rawEsoStatus);
-            alreadyGet.push(slugIdentify.slug);
-          }
-        },
-      );
-    });
+    new SlugsIdentifier(raw).slugIdentified.forEach(
+      (slugIdentify: SlugIdentifier): void => {
+        const rawEsoStatus: RawEsoStatus = {
+          sources: [ServiceAlertsUrl],
+          raw: [raw],
+          slugs: [slugIdentify.slug],
+          type: slugIdentify.getType(),
+          support: slugIdentify.getSupport(),
+          zone: slugIdentify.getZone(),
+          status: statusIdentifier.status,
+          rawSlug: slugIdentify.rawSlug,
+        };
+
+        if (dateFormatter.rawDate !== undefined) {
+          rawEsoStatus.rawDate = dateFormatter.rawDate;
+          rawEsoStatus.dates = dateFormatter.dates;
+        }
+        if (statusIdentifier.rawStatus !== undefined) {
+          rawEsoStatus.rawStatus = statusIdentifier.rawStatus;
+        }
+        if (!this.alreadyGet.includes(slugIdentify.slug)) {
+          this.rawEsoStatus.push(rawEsoStatus);
+          this.alreadyGet.push(slugIdentify.slug);
+        }
+      },
+    );
   }
 }
