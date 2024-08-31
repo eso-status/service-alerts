@@ -9,8 +9,9 @@ export default class DateFormatter {
   constructor(private readonly raw: string) {
     this.rawDate = this.getRawDate();
 
-    const dateData: string = this.getDateData();
-    const hourData: string = this.getHourData();
+    const split: string[] = raw.split(' ');
+    const dateData: string = split[0];
+    const hourData: string = split[2];
 
     this.dates = [
       moment()
@@ -31,13 +32,5 @@ export default class DateFormatter {
       return `${this.raw.split('))')[0]})`;
     }
     return `${this.raw.split(')')[0]})`;
-  }
-
-  private getDateData(): string {
-    return this.rawDate.split(' ')[0];
-  }
-
-  private getHourData(): string {
-    return this.rawDate.split(' ')[2];
   }
 }

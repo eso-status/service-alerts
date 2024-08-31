@@ -1,9 +1,6 @@
 import { Slug, Support, Type, Zone } from '@eso-status/types';
 import { RemoteRawSlug } from '../type/remoteRawSlug.type';
 
-/**
- * Slug Identifier class
- */
 export default class SlugIdentifier {
   constructor(
     public readonly rawSlug: RemoteRawSlug,
