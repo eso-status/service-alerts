@@ -55,7 +55,7 @@
     "README.md"
   ],
   "engines": {
-    "node": ">=18.18.0 || >=20.0.0"
+    "node": "^16.10.0 || ^18.12.0 || >=20.0.0"
   },
   "bugs": {
     "url": "https://github.com/eso-status/service-alerts/issues"
