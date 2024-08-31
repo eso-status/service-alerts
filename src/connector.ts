@@ -7,32 +7,24 @@ import SlugsIdentifier from './identifier/slugs.identifier';
 import SlugIdentifier from './identifier/slug.identifier';
 
 export default class Connector {
-  private raw: string[];
+  private raw: string[] = [];
 
-  public rawEsoStatus: RawEsoStatus[];
+  public rawEsoStatus: RawEsoStatus[] = [];
 
   private rawContent: string;
 
-  private alreadyGet: Slug[];
+  private alreadyGet: Slug[] = [];
 
   constructor(private readonly remoteContent: string) {
-    this.raw = [];
-    this.rawEsoStatus = [];
-    this.alreadyGet = [];
-
     if (this.remoteContent !== '') {
-      this.getRawContent();
-      this.getRaw();
-      this.cleanRaw();
-      this.getData();
+      this.isolate();
+      this.split();
+      this.clean();
+      this.get();
     }
   }
 
-  public static async init(): Promise<Connector> {
-    return new Connector(await Connector.getRemoteContent());
-  }
-
-  private static async getRemoteContent(): Promise<string> {
+  public static async getRemoteContent(): Promise<string> {
     const response: AxiosResponse<string> =
       await axios.get<string>(ServiceAlertsUrl);
 
@@ -41,20 +33,20 @@ export default class Connector {
       : '';
   }
 
-  private getRawContent(): void {
+  private isolate(): void {
     this.rawContent = this.remoteContent
       .split('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')[1]
       .split('</div>')
       .shift();
   }
 
-  private getRaw(): void {
+  private split(): void {
     this.rawContent.split('<hr />').forEach((raw: string): void => {
       this.raw.push(raw);
     });
   }
 
-  private cleanRaw(): void {
+  private clean(): void {
     this.raw = this.raw.map((raw: string): string => {
       let rawReplace: string = raw.replaceAll(/\n/g, '');
       rawReplace = rawReplace.replaceAll(' </p><p>', ' ');
@@ -69,7 +61,7 @@ export default class Connector {
     });
   }
 
-  private getData(): void {
+  private get(): void {
     this.raw.forEach((raw: string): void => this.generateRaw(raw));
   }
 

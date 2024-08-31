@@ -33,7 +33,7 @@ npm i @eso-status/service-alerts
 import ServiceAlerts from '@eso-status/service-alerts';
 import { RawEsoStatus } from '@eso-status/types';
 
-const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
+const rawEsoStatus: RawEsoStatus = await ServiceAlerts.fetch();
 ```
 ### Return exemple
 ```text
