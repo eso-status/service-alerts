@@ -1,8 +1,4 @@
 /.idea/
-/node_modules/
-index.d.ts
-index.js
-index.js.map
-/coverage/
-/tsconfig.build.tsbuildinfo
 /lib/
+/coverage/
+/node_modules/

@@ -28,7 +28,4 @@ module.exports = {
     jest: true,
   },
   ignorePatterns: ['.eslintrc.js'],
-  rules: {
-    '@typescript-eslint/no-unsafe-declaration-merging': 'off',
-  },
 };

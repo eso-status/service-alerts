@@ -13,7 +13,6 @@ test
 .prettierignore
 .prettierrc
 nodemon.json
-pre-commit
 sonar-project.properties
 tsconfig.build.json
 tsconfig.eslint.json
