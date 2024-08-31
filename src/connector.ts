@@ -1,10 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
 import { RawEsoStatus, Slug } from '@eso-status/types';
-import StatusIdentifier from './identifier/status.identifier';
-import DateFormatter from './formatter/date.formatter';
 import ServiceAlertsUrl from './const';
-import SlugsIdentifier from './identifier/slugs.identifier';
-import SlugIdentifier from './identifier/slug.identifier';
+import Raw from './raw';
+import Match from './match';
 
 export default class Connector {
   private raw: string[] = [];
@@ -22,7 +20,6 @@ export default class Connector {
 
     this.isolate();
     this.split();
-    this.clean();
     this.get();
   }
 
@@ -48,55 +45,22 @@ export default class Connector {
     });
   }
 
-  private clean(): void {
-    this.raw = this.raw.map((raw: string): string => {
-      let rawReplace: string = raw.replaceAll(/\n/g, '');
-      rawReplace = rawReplace.replaceAll(' </p><p>', ' ');
-      rawReplace = rawReplace.replaceAll('</p><p>', ' ');
-      rawReplace = rawReplace.replaceAll('  <p>', '');
-      rawReplace = rawReplace.replaceAll(' </p>', '');
-      rawReplace = rawReplace.replaceAll(' <p>', '');
-      rawReplace = rawReplace.replaceAll('<p>', '');
-      rawReplace = rawReplace.replaceAll('</p>', '');
-      rawReplace = rawReplace.replaceAll('&nbsp;', '');
-      return rawReplace.replaceAll('<div>', '');
-    });
-  }
-
   private get(): void {
-    this.raw.forEach((raw: string): void => this.generateRaw(raw));
+    this.raw.forEach((raw: string): void => this.getEach(raw));
   }
 
-  private generateRaw(raw: string): void {
-    const statusIdentifier: StatusIdentifier = new StatusIdentifier(raw);
-    const dateFormatter: DateFormatter = new DateFormatter(raw);
-
-    new SlugsIdentifier(raw).slugIdentified.forEach(
-      (slugIdentify: SlugIdentifier): void => {
-        const rawEsoStatus: RawEsoStatus = {
-          sources: [ServiceAlertsUrl],
-          raw: [raw],
-          slugs: [slugIdentify.slug],
-          type: slugIdentify.getType(),
-          support: slugIdentify.getSupport(),
-          zone: slugIdentify.getZone(),
-          status: statusIdentifier.status,
-          rawSlug: slugIdentify.rawSlug,
-        };
-
-        if (dateFormatter.rawDate) {
-          rawEsoStatus.rawDate = dateFormatter.rawDate;
-          rawEsoStatus.dates = dateFormatter.dates;
-        }
-        if (statusIdentifier.rawStatus) {
-          rawEsoStatus.rawStatus = statusIdentifier.rawStatus;
-        }
-        if (this.alreadyGet.includes(slugIdentify.slug)) {
-          return;
-        }
-        this.rawEsoStatus.push(rawEsoStatus);
-        this.alreadyGet.push(slugIdentify.slug);
-      },
+  private getEach(raw: string): void {
+    new Raw(raw).matches.forEach((match: Match): void =>
+      this.populateRawEsoStatus(match),
     );
+  }
+
+  private populateRawEsoStatus(match: Match): void {
+    const rawEsoStatus: RawEsoStatus = match.getRawEsoStatus();
+    if (this.alreadyGet.includes(match.slug)) {
+      return;
+    }
+    this.rawEsoStatus.push(rawEsoStatus);
+    this.alreadyGet.push(match.slug);
   }
 }

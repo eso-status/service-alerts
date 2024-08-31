@@ -78,7 +78,7 @@ export default class SlugsIdentifier {
     return <RemoteRawSlug[]>this[SlugsIdentifier.getMatchListName(slug)];
   }
 
-  private static getMatchListName(slug: string): string {
+  private static getMatchListName(slug: Slug): string {
     return `${slug
       .split('_')
       .map(
