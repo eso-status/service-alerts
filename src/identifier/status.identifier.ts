@@ -41,9 +41,11 @@ export default class StatusIdentifier {
 
   private identify(status: Status): void {
     const matches: RemoteRawStatus[] = this.getMatches(status);
-    if (matches.length) {
-      this.rawStatus = matches.shift();
-      this.status = status;
+    if (!matches.length) {
+      return;
     }
+
+    this.rawStatus = matches.shift();
+    this.status = status;
   }
 }

@@ -16,12 +16,14 @@ export default class Connector {
   private alreadyGet: Slug[] = [];
 
   constructor(private readonly remoteContent: string) {
-    if (this.remoteContent) {
-      this.isolate();
-      this.split();
-      this.clean();
-      this.get();
+    if (!this.remoteContent) {
+      return;
     }
+
+    this.isolate();
+    this.split();
+    this.clean();
+    this.get();
   }
 
   public static async getRemoteContent(): Promise<string> {
@@ -89,10 +91,11 @@ export default class Connector {
         if (statusIdentifier.rawStatus) {
           rawEsoStatus.rawStatus = statusIdentifier.rawStatus;
         }
-        if (!this.alreadyGet.includes(slugIdentify.slug)) {
-          this.rawEsoStatus.push(rawEsoStatus);
-          this.alreadyGet.push(slugIdentify.slug);
+        if (this.alreadyGet.includes(slugIdentify.slug)) {
+          return;
         }
+        this.rawEsoStatus.push(rawEsoStatus);
+        this.alreadyGet.push(slugIdentify.slug);
       },
     );
   }
