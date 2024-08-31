@@ -97,7 +97,7 @@ export default class SlugsIdentifier {
   private identify(slug: Slug): void {
     const matches: RemoteRawSlug[] = this.getMatches(slug);
 
-    if (matches.length > 0) {
+    if (matches.length) {
       this.slugIdentified.push(new SlugIdentifier(matches[0], slug));
     }
   }

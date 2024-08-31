@@ -16,7 +16,7 @@ export default class Connector {
   private alreadyGet: Slug[] = [];
 
   constructor(private readonly remoteContent: string) {
-    if (this.remoteContent !== '') {
+    if (this.remoteContent) {
       this.isolate();
       this.split();
       this.clean();
@@ -82,11 +82,11 @@ export default class Connector {
           rawSlug: slugIdentify.rawSlug,
         };
 
-        if (dateFormatter.rawDate !== undefined) {
+        if (dateFormatter.rawDate) {
           rawEsoStatus.rawDate = dateFormatter.rawDate;
           rawEsoStatus.dates = dateFormatter.dates;
         }
-        if (statusIdentifier.rawStatus !== undefined) {
+        if (statusIdentifier.rawStatus) {
           rawEsoStatus.rawStatus = statusIdentifier.rawStatus;
         }
         if (!this.alreadyGet.includes(slugIdentify.slug)) {
