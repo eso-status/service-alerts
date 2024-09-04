@@ -77,7 +77,7 @@
     "test": "npm run build && jest --runInBand --setupFiles",
     "test:watch": "jest --runInBand --watch --setupFiles",
     "test:cov": "jest --runInBand --coverage --setupFiles",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@eso-status/types": "1.0.7",
@@ -100,23 +100,6 @@
     "prettier": "3.3.3",
     "ts-jest": "29.2.5",
     "typescript": "5.5.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "prettier --write",
-      "eslint --fix",
-      "jest --findRelatedTests",
-      "git add"
-    ],
-    "*.{html,css,less,ejs,json}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "jest": {
     "moduleFileExtensions": [
