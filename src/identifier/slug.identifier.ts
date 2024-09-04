@@ -11,9 +11,19 @@ import { RemoteServiceSystemAccountRawSlug } from '../type/remoteServiceSystemAc
 import { RemoteRawSlug } from '../type/remoteRawSlug.type';
 import SlugMatch from './slug.match';
 
+/**
+ * Class for identifying the list of slugs contained in an announcement
+ */
 export default class SlugIdentifier {
+  /**
+   * List of slug information found in the announcement
+   */
   public slugMatches: SlugMatch[];
 
+  /**
+   * List of slugs to check for presence in the announcement
+   * @private
+   */
   private readonly slugList: Slug[] = [
     'server_pc_eu',
     'server_ps_eu',
@@ -26,16 +36,28 @@ export default class SlugIdentifier {
     'service_system_account',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_pc_eu
+   * @private
+   */
   private readonly ServerPcEuMatchesList: RemoteServerPcEuRawSlug[] = [
     'The European megaservers',
     'The European PC/Mac megaserver',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_ps_eu
+   * @private
+   */
   private readonly ServerPsEuMatchesList: RemoteServerPsEuRawSlug[] = [
     'The European megaservers',
     'The European PlayStation® megaserver',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_xbox_eu
+   * @private
+   */
   private readonly ServerXboxEuMatchesList: RemoteServerXboxEuRawSlug[] = [
     'The European megaservers',
     'The European Xbox megaserver',
@@ -43,16 +65,28 @@ export default class SlugIdentifier {
     'Xbox Live™',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_pc_na
+   * @private
+   */
   private readonly ServerPcNaMatchesList: RemoteServerPcNaRawSlug[] = [
     'The North American megaservers',
     'The North American PC/Mac megaserver',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_ps_na
+   * @private
+   */
   private readonly ServerPsNaMatchesList: RemoteServerPsNaRawSlug[] = [
     'The North American megaservers',
     'North American PlayStation® megaserver',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_xbox_na
+   * @private
+   */
   private readonly ServerXboxNaMatchesList: RemoteServerXboxNaRawSlug[] = [
     'The North American megaservers',
     'The North American Xbox megaserver',
@@ -60,24 +94,49 @@ export default class SlugIdentifier {
     'Xbox Live™',
   ];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug server_pc_pts
+   * @private
+   */
   private readonly ServerPcPtsMatchesList: RemoteServerPcPtsRawSlug[] = ['PTS'];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug service_store_eso
+   * @private
+   */
   private readonly ServiceStoreEsoMatchesList: RemoteServiceStoreEsoRawSlug[] =
     ['ESO store'];
 
+  /**
+   * List of indicators proving that the announcement pertains to the slug service_system_account
+   * @private
+   */
   private readonly ServiceSystemAccountMatchesList: RemoteServiceSystemAccountRawSlug[] =
     ['account system'];
 
+  /**
+   * @param raw Raw data of the announcement
+   */
   constructor(private readonly raw: string) {
     this.slugMatches = [];
 
     this.slugList.forEach((slug: Slug): void => this.identify(slug));
   }
 
+  /**
+   * Method for retrieving the list of indicators for a slug to test
+   * @param slug Slug to test
+   * @private
+   */
   private getMatchList(slug: Slug): RemoteRawSlug[] {
     return <RemoteRawSlug[]>this[SlugIdentifier.getMatchListName(slug)];
   }
 
+  /**
+   * Method for retrieving the name of the list of indicators for a slug to test
+   * @param slug Slug to test
+   * @private
+   */
   private static getMatchListName(slug: Slug): string {
     return `${slug
       .split('_')
@@ -88,12 +147,22 @@ export default class SlugIdentifier {
       .join('')}MatchesList`;
   }
 
+  /**
+   * Method for retrieving the indicators of a slug present in the announcement
+   * @param slug Slug to test
+   * @private
+   */
   private getMatches(slug: Slug): RemoteRawSlug[] {
     return this.getMatchList(slug).filter(
       (identifier: RemoteRawSlug): boolean => this.raw.includes(identifier),
     );
   }
 
+  /**
+   * Method for testing if the announcement contains indicators of a given slug
+   * @param slug Slug to test
+   * @private
+   */
   private identify(slug: Slug): void {
     const matches: RemoteRawSlug[] = this.getMatches(slug);
 

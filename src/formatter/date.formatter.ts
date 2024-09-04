@@ -1,11 +1,23 @@
 import { Moment } from 'moment';
 import * as moment from 'moment';
 
+/**
+ * Class for identifying and formatting the date contained in an announcement
+ */
 export default class DateFormatter {
+  /**
+   * Raw date data contained in the announcement
+   */
   public rawDate: string;
 
-  public dates: Moment[] | undefined;
+  /**
+   * List of dates formatted correctly contained in the announcement
+   */
+  public dates: Moment[];
 
+  /**
+   * @param raw Raw data of the announcement
+   */
   constructor(private readonly raw: string) {
     this.rawDate = this.getRawDate();
 

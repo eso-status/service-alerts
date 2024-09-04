@@ -2,12 +2,12 @@ import { Slug, Support, Type, Zone } from '@eso-status/types';
 import { RemoteRawSlug } from '../type/remoteRawSlug.type';
 
 /**
- * Class permettant de récupérer les informations sur un slug trouvé dans une annonce
+ * Class for retrieving information about a slug found in an announcement
  */
 export default class SlugMatch {
   /**
-   * @param rawSlug Donnée ayant permis d'identifier la présence du slug dans l'annonce
-   * @param slug Slug trouvé dans l'annonce
+   * @param rawSlug Data used to identify the presence of the slug in the announcement
+   * @param slug Slug found in the announcement
    */
   constructor(
     public readonly rawSlug: RemoteRawSlug,
@@ -15,21 +15,21 @@ export default class SlugMatch {
   ) {}
 
   /**
-   * Méthode permettant de récupérer le type du slug
+   * Method for retrieving the type of the slug
    */
   public getType(): Type {
     return <Type>this.slug.split('_')[0];
   }
 
   /**
-   * Méthode permettant de récupérer le support du slug
+   * Method for retrieving the support of the slug
    */
   public getSupport(): Support {
     return <Support>this.slug.split('_')[1];
   }
 
   /**
-   * Méthode permettant de récupérer la zone du slug
+   * Method for retrieving the area of the slug
    */
   public getZone(): Zone {
     return <Zone>this.slug.split('_')[2];

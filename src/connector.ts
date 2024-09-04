@@ -3,15 +3,25 @@ import { RawEsoStatus, Slug } from '@eso-status/types';
 import ServiceAlertsUrl from './const';
 import Raw from './raw';
 
+/**
+ * Class for retrieving information from announcements
+ */
 export default class Connector {
-  private raw: string[] = [];
+  /**
+   * List of raw data from announcements
+   */
+  public raw: string[] = [];
 
+  /**
+   * List of information from announcements
+   */
   public rawEsoStatus: RawEsoStatus[] = [];
-
-  private rawContent: string;
 
   private alreadyGet: Slug[] = [];
 
+  /**
+   * @param remoteContent Content of the source retrieved
+   */
   constructor(private readonly remoteContent: string) {
     if (!this.remoteContent) {
       return;
@@ -19,35 +29,54 @@ export default class Connector {
 
     this.isolate();
     this.split();
-    this.get();
+    this.fetch();
   }
 
-  public static async getRemoteContent(): Promise<string> {
-    const response: AxiosResponse<string> =
-      await axios.get<string>(ServiceAlertsUrl);
+  /**
+   * Method for creating an instance of the connector
+   */
+  public static async init(): Promise<Connector> {
+    return new Connector(await Connector.getRemoteContent());
+  }
+
+  /**
+   * Method for retrieving remote content
+   * @private
+   */
+  private static async getRemoteContent(): Promise<string> {
+    const response: AxiosResponse<string> = await axios.get<string>(ServiceAlertsUrl);
 
     return response?.status === 200 && !!response?.data
       ? String(response?.data)
       : '';
   }
 
-  private isolate(): void {
-    this.rawContent = this.remoteContent
+  private isolate(): string {
+    return this.remoteContent
       .split('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')[1]
       .split('</div>')
       .shift();
   }
 
   private split(): void {
-    this.rawContent.split('<hr />').forEach((raw: string): void => {
+    this.isolate().split('<hr />').forEach((raw: string): void => {
       this.raw.push(raw);
     });
   }
 
-  private get(): void {
+  /**
+   * Method for analyzing each announcement
+   * @private
+   */
+  private fetch(): void {
     this.raw.forEach((raw: string): void => this.getEach(raw));
   }
 
+  /**
+   * Method for retrieving the information contained in an announcement
+   * @param raw Raw data of the announcement
+   * @private
+   */
   private getEach(raw: string): void {
     new Raw(raw).matches.forEach((match: RawEsoStatus): void =>
       this.populateRawEsoStatus(match),
