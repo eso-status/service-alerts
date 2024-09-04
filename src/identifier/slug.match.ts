@@ -9,10 +9,7 @@ export default class SlugMatch {
    * @param rawSlug Data used to identify the presence of the slug in the announcement
    * @param slug Slug found in the announcement
    */
-  constructor(
-    public readonly rawSlug: RemoteRawSlug,
-    public readonly slug: Slug,
-  ) {}
+  constructor(public readonly rawSlug: RemoteRawSlug, public readonly slug: Slug) {}
 
   /**
    * Method for retrieving the type of the slug

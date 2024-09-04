@@ -35,9 +35,7 @@ export default class Raw {
   /**
    * @param raw Raw data of the announcement
    */
-  constructor(
-    private raw: string,
-  ) {
+  constructor(private raw: string) {
     this.clean();
 
     this.statusIdentifier = new StatusIdentifier(this.raw);
@@ -66,9 +64,7 @@ export default class Raw {
    * @private
    */
   private split(): void {
-    this.matches = this.slugsIdentifier.slugMatches.map(
-      (slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch),
-    );
+    this.matches = this.slugsIdentifier.slugMatches.map((slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch));
   }
 
   /**

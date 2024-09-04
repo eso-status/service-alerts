@@ -78,15 +78,14 @@ export default class Connector {
    * @private
    */
   private getEach(raw: string): void {
-    new Raw(raw).matches.forEach((match: RawEsoStatus): void =>
-      this.populateRawEsoStatus(match),
-    );
+    new Raw(raw).matches.forEach((match: RawEsoStatus): void => this.populateRawEsoStatus(match));
   }
 
   private populateRawEsoStatus(match: RawEsoStatus): void {
     if (this.alreadyGet.includes(match.slugs[0])) {
       return;
     }
+
     this.rawEsoStatus.push(match);
     this.alreadyGet.push(match.slugs[0]);
   }
