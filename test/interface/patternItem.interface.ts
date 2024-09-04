@@ -1,4 +1,4 @@
-import { RawEsoStatus } from '@eso-status/types';
+import { RawEsoStatus } from './rawEsoStatus.interface';
 
 export interface PatternItem {
   date: string;
