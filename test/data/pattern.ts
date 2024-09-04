@@ -709,7 +709,7 @@ const pattern: PatternItem[] = [
         zone: 'account',
         status: 'up',
         rawSlug: 'account system',
-        rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT',
+        rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
         dates: [
           moment()
             .utc()
