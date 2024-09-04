@@ -1,8 +1,9 @@
+import { RawEsoStatus } from '@eso-status/types';
 import StatusIdentifier from './identifier/status.identifier';
 import DateFormatter from './formatter/date.formatter';
 import SlugIdentifier from './identifier/slug.identifier';
-import Match from './match';
 import SlugMatch from './identifier/slug.match';
+import ServiceAlertsUrl from './const';
 
 export default class Raw {
   public statusIdentifier: StatusIdentifier;
@@ -11,7 +12,7 @@ export default class Raw {
 
   public slugsIdentifier: SlugIdentifier;
 
-  public matches: Match[] = [];
+  public matches: RawEsoStatus[] = [];
 
   constructor(private raw: string) {
     this.clean();
@@ -39,16 +40,30 @@ export default class Raw {
 
   private split(): void {
     this.matches = this.slugsIdentifier.slugMatches.map(
-      (slugMatch: SlugMatch): Match => this.getMatch(slugMatch),
+      (slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch),
     );
   }
 
-  private getMatch(slugMatch: SlugMatch): Match {
-    return new Match(
-      this.raw,
-      this.statusIdentifier,
-      this.dateFormatter,
-      slugMatch,
-    );
+  public getRawEsoStatus(slugMatch: SlugMatch): RawEsoStatus {
+    const rawEsoStatus: RawEsoStatus = {
+      sources: [ServiceAlertsUrl],
+      raw: [this.raw],
+      slugs: [slugMatch.slug],
+      type: slugMatch.getType(),
+      support: slugMatch.getSupport(),
+      zone: slugMatch.getZone(),
+      status: this.statusIdentifier.status,
+      rawSlug: slugMatch.rawSlug,
+    };
+
+    if (this.dateFormatter.rawDate) {
+      rawEsoStatus.rawDate = this.dateFormatter.rawDate;
+      rawEsoStatus.dates = this.dateFormatter.dates;
+    }
+    if (this.statusIdentifier.rawStatus) {
+      rawEsoStatus.rawStatus = this.statusIdentifier.rawStatus;
+    }
+
+    return rawEsoStatus;
   }
 }

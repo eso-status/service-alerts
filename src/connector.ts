@@ -2,7 +2,6 @@ import axios, { AxiosResponse } from 'axios';
 import { RawEsoStatus, Slug } from '@eso-status/types';
 import ServiceAlertsUrl from './const';
 import Raw from './raw';
-import Match from './match';
 
 export default class Connector {
   private raw: string[] = [];
@@ -50,17 +49,16 @@ export default class Connector {
   }
 
   private getEach(raw: string): void {
-    new Raw(raw).matches.forEach((match: Match): void =>
+    new Raw(raw).matches.forEach((match: RawEsoStatus): void =>
       this.populateRawEsoStatus(match),
     );
   }
 
-  private populateRawEsoStatus(match: Match): void {
-    const rawEsoStatus: RawEsoStatus = match.getRawEsoStatus();
-    if (this.alreadyGet.includes(match.slug)) {
+  private populateRawEsoStatus(match: RawEsoStatus): void {
+    if (this.alreadyGet.includes(match.slugs[0])) {
       return;
     }
-    this.rawEsoStatus.push(rawEsoStatus);
-    this.alreadyGet.push(match.slug);
+    this.rawEsoStatus.push(match);
+    this.alreadyGet.push(match.slugs[0]);
   }
 }

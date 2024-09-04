@@ -49,8 +49,6 @@
     "lib/const.js",
     "lib/index.d.ts",
     "lib/index.js",
-    "lib/match.d.ts",
-    "lib/match.js",
     "lib/raw.d.ts",
     "lib/raw.js",
     ".npmrc,",
