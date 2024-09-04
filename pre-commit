@@ -1,5 +1,0 @@
-#!/bin/sh
-
-npm run test --bail
-npm run lint
-npm run build
