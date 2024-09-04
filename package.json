@@ -106,10 +106,14 @@
     }
   },
   "lint-staged": {
-    "*": [
-      "npm run lint",
-      "npm run build",
-      "npm run test",
+    "*.{js,ts}": [
+      "prettier --write",
+      "eslint --fix",
+      "jest --findRelatedTests",
+      "git add"
+    ],
+    "*.{html,css,less,ejs,json}": [
+      "prettier --write",
       "git add"
     ]
   },
