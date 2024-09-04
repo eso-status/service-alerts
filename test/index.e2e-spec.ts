@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
 import axios from 'axios';
+import * as moment from 'moment';
 import pattern from './data/pattern';
 import { PatternItem } from './interface/patternItem.interface';
 import ServiceAlerts from '../src';
@@ -23,7 +24,28 @@ describe('ForumMessage (e2e)', (): void => {
           },
         );
 
-      expect(await ServiceAlerts.fetch()).toStrictEqual(patternData.expected);
+      jest
+        .useFakeTimers()
+        .setSystemTime(
+          new Date(
+            moment(patternData.date, 'YYYY-MM-DD')
+              .utcOffset(0)
+              .set('years', moment(patternData.date, 'YYYY-MM-DD').get('years'))
+              .set(
+                'months',
+                moment(patternData.date, 'YYYY-MM-DD').get('months'),
+              )
+              .set('days', moment(patternData.date, 'YYYY-MM-DD').get('days'))
+              .set('hour', 0)
+              .set('hours', 0)
+              .set('minutes', 0)
+              .set('seconds', 0)
+              .set('milliseconds', 0)
+              .toISOString(),
+          ),
+        );
+
+      expect(await ServiceAlerts.getData()).toStrictEqual(patternData.expected);
     },
   );
 
@@ -39,6 +61,6 @@ describe('ForumMessage (e2e)', (): void => {
         },
       );
 
-    expect(await ServiceAlerts.fetch()).toEqual([]);
+    expect(await ServiceAlerts.getData()).toEqual([]);
   });
 });

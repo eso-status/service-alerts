@@ -5,6 +5,7 @@ import { PatternItem } from '../interface/patternItem.interface';
 const pattern: PatternItem[] = [
   {
     url: ServiceAlertsUrl,
+    date: '2024-08-13T12_16_34',
     file: '2024-08-13T12_16_34.html',
     expected: [
       {
@@ -245,6 +246,7 @@ const pattern: PatternItem[] = [
   },
   {
     url: ServiceAlertsUrl,
+    date: '2024-08-19T16_12_04',
     file: '2024-08-19T16_12_04.html',
     expected: [
       {
@@ -485,6 +487,7 @@ const pattern: PatternItem[] = [
   },
   {
     url: ServiceAlertsUrl,
+    date: '2024-08-19T17_12_44',
     file: '2024-08-19T17_12_44.html',
     expected: [
       {
