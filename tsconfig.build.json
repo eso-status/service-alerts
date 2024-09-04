@@ -1,4 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["node_modules", "test", "lib", "coverage"]
+  "exclude": ["node_modules", "test", "lib", "coverage", "eslint.config.mjs"]
 }
