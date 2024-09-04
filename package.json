@@ -76,7 +76,8 @@
     "watch": "nodemon --exec npm run dev",
     "test": "npm run build && jest --runInBand --setupFiles",
     "test:watch": "jest --runInBand --watch --setupFiles",
-    "test:cov": "jest --runInBand --coverage --setupFiles"
+    "test:cov": "jest --runInBand --coverage --setupFiles",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@eso-status/types": "1.0.7",
