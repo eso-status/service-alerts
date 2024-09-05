@@ -1,7 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
-import { RawEsoStatus, Slug } from '@eso-status/types';
+import { Slug } from '@eso-status/types';
 import ServiceAlertsUrl from './const';
 import Raw from './raw';
+import { EsoStatusRawData } from './interface/esoStatusRawData.interface';
 
 /**
  * Class for retrieving information from announcements
@@ -15,8 +16,12 @@ export default class Connector {
   /**
    * List of information from announcements
    */
-  public rawEsoStatus: RawEsoStatus[] = [];
+  public rawEsoStatus: EsoStatusRawData[] = [];
 
+  /**
+   * List of slugs whose data has already been retrieved
+   * @private
+   */
   private alreadyGet: Slug[] = [];
 
   /**
@@ -52,6 +57,10 @@ export default class Connector {
       : '';
   }
 
+  /**
+   * Method for isolating the section containing the list of announcements
+   * @private
+   */
   private isolate(): string {
     return this.remoteContent
       .split('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')[1]
@@ -59,6 +68,10 @@ export default class Connector {
       .shift();
   }
 
+  /**
+   * Method for separating announcement blocks
+   * @private
+   */
   private split(): void {
     this.isolate()
       .split('<hr />')
@@ -81,17 +94,22 @@ export default class Connector {
    * @private
    */
   private getEach(raw: string): void {
-    new Raw(raw).matches.forEach((match: RawEsoStatus): void =>
+    new Raw(raw).matches.forEach((match: EsoStatusRawData): void =>
       this.populateRawEsoStatus(match),
     );
   }
 
-  private populateRawEsoStatus(match: RawEsoStatus): void {
-    if (this.alreadyGet.includes(match.slugs[0])) {
+  /**
+   * Method for creating the list of announcements while avoiding duplicates
+   * @param match Object containing the information of a slug found in an announcement
+   * @private
+   */
+  private populateRawEsoStatus(match: EsoStatusRawData): void {
+    if (this.alreadyGet.includes(match.slug)) {
       return;
     }
 
     this.rawEsoStatus.push(match);
-    this.alreadyGet.push(match.slugs[0]);
+    this.alreadyGet.push(match.slug);
   }
 }

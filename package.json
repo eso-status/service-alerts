@@ -1,7 +1,7 @@
 {
   "name": "@eso-status/service-alerts",
   "version": "2.0.0-dev.0",
-  "description": "library for retrieving and formatting data, which can be found at https://help.elderscrollsonline.com/app/answers/detail/a_id/4320",
+  "description": "Library for retrieving and formatting data, available at https://help.elderscrollsonline.com/app/answers/detail/a_id/4320.",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "main": "lib/index.js",
   "license": "MIT",
@@ -57,7 +57,7 @@
     "README.md"
   ],
   "engines": {
-    "node": ">=16.10.0 || >=18.12.0 || >=20.0.0"
+    "node": "^18.18.0 || ^20.0.0"
   },
   "bugs": {
     "url": "https://github.com/eso-status/service-alerts/issues"
@@ -80,7 +80,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eso-status/types": "1.0.7",
+    "@eso-status/types": "2.0.0-dev.5",
     "axios": "1.7.7",
     "moment": "2.30.1"
   },

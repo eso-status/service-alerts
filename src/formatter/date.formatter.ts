@@ -39,6 +39,10 @@ export default class DateFormatter {
     ];
   }
 
+  /**
+   * Method for retrieving the raw date
+   * @private
+   */
   private getRawDate(): string {
     if (this.raw.includes('))')) {
       return `${this.raw.split('))')[0]})`;

@@ -1,9 +1,9 @@
-import { RawEsoStatus } from '@eso-status/types';
 import StatusIdentifier from './identifier/status.identifier';
 import DateFormatter from './formatter/date.formatter';
 import SlugIdentifier from './identifier/slug.identifier';
 import SlugMatch from './identifier/slug.match';
 import ServiceAlertsUrl from './const';
+import { EsoStatusRawData } from './interface/esoStatusRawData.interface';
 
 /**
  * Class containing announcement information
@@ -30,7 +30,7 @@ export default class Raw {
   /**
    * List of information about slugs found in the announcement
    */
-  public matches: RawEsoStatus[] = [];
+  public matches: EsoStatusRawData[] = [];
 
   /**
    * @param raw Raw data of the announcement
@@ -45,6 +45,10 @@ export default class Raw {
     this.split();
   }
 
+  /**
+   * Method for removing unwanted elements/characters from an announcement
+   * @private
+   */
   private clean(): void {
     this.raw = this.raw
       .replaceAll(/\n/g, '')
@@ -65,18 +69,19 @@ export default class Raw {
    */
   private split(): void {
     this.matches = this.slugsIdentifier.slugMatches.map(
-      (slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch),
+      (slugMatch: SlugMatch): EsoStatusRawData =>
+        this.getRawEsoStatus(slugMatch),
     );
   }
 
   /**
    * Method for generating the RawEsoStatus object
    */
-  private getRawEsoStatus(slugMatch: SlugMatch): RawEsoStatus {
-    const rawEsoStatus: RawEsoStatus = {
-      sources: [ServiceAlertsUrl],
-      raw: [this.raw],
-      slugs: [slugMatch.slug],
+  private getRawEsoStatus(slugMatch: SlugMatch): EsoStatusRawData {
+    const rawEsoStatus: EsoStatusRawData = {
+      source: ServiceAlertsUrl,
+      raw: this.raw,
+      slug: slugMatch.slug,
       type: slugMatch.getType(),
       support: slugMatch.getSupport(),
       zone: slugMatch.getZone(),
