@@ -1,6 +1,6 @@
 import * as moment from 'moment/moment';
-import ServiceAlertsUrl from 'src/const';
 import { PatternItem } from '../interface/patternItem.interface';
+import ServiceAlertsUrl from '../../src/const';
 
 const pattern: PatternItem[] = [
   {

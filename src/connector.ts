@@ -44,7 +44,8 @@ export default class Connector {
    * @private
    */
   private static async getRemoteContent(): Promise<string> {
-    const response: AxiosResponse<string> = await axios.get<string>(ServiceAlertsUrl);
+    const response: AxiosResponse<string> =
+      await axios.get<string>(ServiceAlertsUrl);
 
     return response?.status === 200 && !!response?.data
       ? String(response?.data)
@@ -59,9 +60,11 @@ export default class Connector {
   }
 
   private split(): void {
-    this.isolate().split('<hr />').forEach((raw: string): void => {
-      this.raw.push(raw);
-    });
+    this.isolate()
+      .split('<hr />')
+      .forEach((raw: string): void => {
+        this.raw.push(raw);
+      });
   }
 
   /**
@@ -78,7 +81,9 @@ export default class Connector {
    * @private
    */
   private getEach(raw: string): void {
-    new Raw(raw).matches.forEach((match: RawEsoStatus): void => this.populateRawEsoStatus(match));
+    new Raw(raw).matches.forEach((match: RawEsoStatus): void =>
+      this.populateRawEsoStatus(match),
+    );
   }
 
   private populateRawEsoStatus(match: RawEsoStatus): void {

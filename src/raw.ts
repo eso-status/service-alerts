@@ -64,7 +64,9 @@ export default class Raw {
    * @private
    */
   private split(): void {
-    this.matches = this.slugsIdentifier.slugMatches.map((slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch));
+    this.matches = this.slugsIdentifier.slugMatches.map(
+      (slugMatch: SlugMatch): RawEsoStatus => this.getRawEsoStatus(slugMatch),
+    );
   }
 
   /**

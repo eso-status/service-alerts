@@ -22,11 +22,7 @@ export default class StatusIdentifier {
    * List of statuses to check for presence in the announcement
    * @private
    */
-  private readonly statusList: Status[] = [
-    'up',
-    'down',
-    'issues'
-  ];
+  private readonly statusList: Status[] = ['up', 'down', 'issues'];
 
   /**
    * List of indicators proving that the announcement pertains to the status up
@@ -76,7 +72,9 @@ export default class StatusIdentifier {
    * @private
    */
   private getMatches(status: Status): RemoteRawStatus[] {
-    return this.getMatchList(status).filter((identifier: RemoteRawStatus): boolean => this.raw.includes(identifier));
+    return this.getMatchList(status).filter(
+      (identifier: RemoteRawStatus): boolean => this.raw.includes(identifier),
+    );
   }
 
   /**
