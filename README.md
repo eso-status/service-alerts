@@ -31,21 +31,17 @@ npm i @eso-status/service-alerts
 ### Usage
 ```javascript
 import ServiceAlerts from '@eso-status/service-alerts';
-import { RawEsoStatus } from '@eso-status/types';
+import { ForumMessagePTSURL } from '@eso-status/types';
 
-const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
+const rawEsoStatus: ForumMessagePTSURL = await ServiceAlerts.getData();
 ```
 ### Return exemple
 ```text
 [
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.27 - 14:40 UTC (10:40 EDT) The PTS is currently available.'
-    ],
-    slugs: [ 'server_pc_pts' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.08.27 - 14:40 UTC (10:40 EDT) The PTS is currently available.',
+    slug: 'server_pc_pts',
     type: 'server',
     support: 'pc',
     zone: 'pts',
@@ -56,13 +52,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.'
-    ],
-    slugs: [ 'service_store_eso' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
+    slug: 'service_store_eso',
     type: 'service',
     support: 'store',
     zone: 'eso',
@@ -73,13 +65,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.'
-    ],
-    slugs: [ 'service_system_account' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.'
+    slug: 'service_system_account',
     type: 'service',
     support: 'system',
     zone: 'account',
@@ -90,13 +78,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
-    ],
-    slugs: [ 'server_ps_eu' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    slug: 'server_ps_eu',
     type: 'server',
     support: 'ps',
     zone: 'eu',
@@ -107,13 +91,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
-    ],
-    slugs: [ 'server_xbox_eu' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    slug: 'server_xbox_eu',
     type: 'server',
     support: 'xbox',
     zone: 'eu',
@@ -124,13 +104,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
-    ],
-    slugs: [ 'server_ps_na' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    slug: 'server_ps_na',
     type: 'server',
     support: 'ps',
     zone: 'na',
@@ -141,13 +117,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
-    ],
-    slugs: [ 'server_xbox_na' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    slug: 'server_xbox_na',
     type: 'server',
     support: 'xbox',
     zone: 'na',
@@ -158,13 +130,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.'
-    ],
-    slugs: [ 'server_pc_na' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.'
+    slug: 'server_pc_na',
     type: 'server',
     support: 'pc',
     zone: 'na',
@@ -175,13 +143,9 @@ const rawEsoStatus: RawEsoStatus = await ServiceAlerts.getData();
     rawStatus: 'currently available'
   },
   {
-    sources: [
-      'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    ],
-    raw: [
-      '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.'
-    ],
-    slugs: [ 'server_pc_eu' ],
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
+    raw: '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.'
+    slug: 'server_pc_eu',
     type: 'server',
     support: 'pc',
     zone: 'eu',
