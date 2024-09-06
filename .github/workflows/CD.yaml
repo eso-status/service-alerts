@@ -1,45 +1,68 @@
-# GitHub Actions workflow
-# https://help.github.com/en/actions/automating-your-workflow-with-github-actions
-# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
-# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions
-
 name: CD
 
 on:
   pull_request:
     types: [closed]
     branches:
-      - "master"
+      - "main"
 
 jobs:
-  deploy:
-    name: Publish to NPM
+  cd:
+    name: CD
     runs-on: ubuntu-latest
+    if: contains(github.head_ref, 'release/')
     timeout-minutes: 10
-    strategy:
-      fail-fast: true
-      matrix:
-        os:
-          - ubuntu-latest
-        node:
-          - 20.17.0
     steps:
       - name: Checkout source
         uses: actions/checkout@v4.1.7
 
-      - name: Install Node ${{ matrix.node }}
+      - name: Install node
         uses: actions/setup-node@v4.0.3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 20.17.0
 
-      - name: Install dependencies
+      - name: Get version
+        id: get_version
+        run: |
+          VERSION=`node -p "require('./package.json').version"`
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check if tag exist
+        id: tag_exist
+        run: |
+          exist=`git tag -l ${{ steps.get_version.outputs.version }} | wc -l`
+          echo "exist=$exist" >> $GITHUB_OUTPUT
+
+      - name: Install npm dependencies
+        if: steps.tag_exist.outputs.exist == 0
         run: npm ci
 
-      - name: Build the code
+      - name: Build
+        if: steps.tag_exist.outputs.exist == 0
         run: npm run build
 
       - name: Publish to NPM
+        if: steps.tag_exist.outputs.exist == 0
         uses: JS-DevTools/npm-publish@v3.1.1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: "public"
+
+      - name: Config git
+        if: steps.tag_exist.outputs.exist == 0
+        run: |
+          git config --global user.email "contact@dov118.dev"
+          git config --global user.name "dov118"
+
+      - name: Set tag
+        if: steps.tag_exist.outputs.exist == 0
+        run: |
+          git tag ${{ steps.get_version.outputs.version }}
+          git push --tags
+
+#      - name: Create release
+#        if: steps.tag_exist.outputs.exist == 0
+#        env:
+#          GH_TOKEN: ${{ secrets.CUSTOM_TOKEN }}
+#        run: |
+#          gh release create ${{ steps.get_version.outputs.version }} --title "${{ steps.get_version.outputs.version }}" --generate-notes --latest
