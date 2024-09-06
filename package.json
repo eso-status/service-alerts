@@ -11,10 +11,12 @@
     "lib/formatter/date.formatter.js",
     "lib/identifier/slug.identifier.d.ts",
     "lib/identifier/slug.identifier.js",
-    "lib/identifier/slugs.identifier.d.ts",
-    "lib/identifier/slugs.identifier.js",
+    "lib/identifier/slug.match.d.ts",
+    "lib/identifier/slug.match.js",
     "lib/identifier/status.identifier.d.ts",
     "lib/identifier/status.identifier.js",
+    "lib/interface/esoStatusRawData.interface.d.ts",
+    "lib/interface/esoStatusRawData.interface.js",
     "lib/type/remoteDownRawStatus.type.d.ts",
     "lib/type/remoteDownRawStatus.type.js",
     "lib/type/remoteIssuesRawStatus.type.d.ts",
@@ -43,6 +45,8 @@
     "lib/type/remoteServiceSystemAccountRawSlug.type.js",
     "lib/type/remoteUpRawStatus.type.d.ts",
     "lib/type/remoteUpRawStatus.type.js",
+    "lib/type/sourceUrl.type.d.ts",
+    "lib/type/sourceUrl.type.js",
     "lib/connector.d.ts",
     "lib/connector.js",
     "lib/const.d.ts",
@@ -80,10 +84,9 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eso-status/types": "2.0.0-dev.5",
+    "@eso-status/types": "2.0.0-dev.11",
     "axios": "1.7.7",
-    "moment": "2.30.1",
-    "moment-timezone": "^0.5.45"
+    "moment": "2.30.1"
   },
   "devDependencies": {
     "@types/jest": "29.5.12",

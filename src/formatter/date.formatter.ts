@@ -19,7 +19,7 @@ export default class DateFormatter {
    * @param raw Raw data of the announcement
    */
   constructor(private readonly raw: string) {
-    this.rawDate = this.getRawDate();
+    this.rawDate = `${this.raw.split(')')[0]})`;
 
     const split: string[] = raw.split(' ');
     const dateData: string = split[0];
@@ -37,16 +37,5 @@ export default class DateFormatter {
         .set('milliseconds', 0)
         .utcOffset(0),
     ];
-  }
-
-  /**
-   * Method for retrieving the raw date
-   * @private
-   */
-  private getRawDate(): string {
-    if (this.raw.includes('))')) {
-      return `${this.raw.split('))')[0]})`;
-    }
-    return `${this.raw.split(')')[0]})`;
   }
 }

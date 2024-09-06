@@ -1,4 +1,4 @@
-import { Status } from '@eso-status/types';
+import { DownStatus, IssuesStatus, Status, UpStatus } from '@eso-status/types';
 import { RemoteIssuesRawStatus } from '../type/remoteIssuesRawStatus.type';
 import { RemoteDownRawStatus } from '../type/remoteDownRawStatus.type';
 import { RemoteUpRawStatus } from '../type/remoteUpRawStatus.type';
@@ -22,7 +22,7 @@ export default class StatusIdentifier {
    * List of statuses to check for presence in the announcement
    * @private
    */
-  private readonly statusList: Status[] = ['up', 'down', 'issues'];
+  private readonly statusList: Status[] = [UpStatus, DownStatus, IssuesStatus];
 
   /**
    * List of indicators proving that the announcement pertains to the status up
