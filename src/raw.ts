@@ -36,31 +36,11 @@ export default class Raw {
    * @param raw Raw data of the announcement
    */
   constructor(private raw: string) {
-    this.clean();
-
     this.statusIdentifier = new StatusIdentifier(this.raw);
     this.dateFormatter = new DateFormatter(this.raw);
     this.slugsIdentifier = new SlugIdentifier(this.raw);
 
     this.split();
-  }
-
-  /**
-   * Method for removing unwanted elements/characters from an announcement
-   * @private
-   */
-  private clean(): void {
-    this.raw = this.raw
-      .replaceAll(/\n/g, '')
-      .replaceAll(' </p><p>', ' ')
-      .replaceAll('</p><p>', ' ')
-      .replaceAll('  <p>', '')
-      .replaceAll(' </p>', '')
-      .replaceAll(' <p>', '')
-      .replaceAll('<p>', '')
-      .replaceAll('</p>', '')
-      .replaceAll('&nbsp;', '')
-      .replaceAll('<div>', '');
   }
 
   /**
@@ -78,7 +58,7 @@ export default class Raw {
    * Method for generating the RawEsoStatus object
    */
   private getRawEsoStatus(slugMatch: SlugMatch): EsoStatusRawData {
-    const rawEsoStatus: EsoStatusRawData = {
+    return {
       source: ServiceAlertsUrl,
       raw: this.raw,
       slug: slugMatch.slug,
@@ -86,18 +66,10 @@ export default class Raw {
       support: slugMatch.getSupport(),
       zone: slugMatch.getZone(),
       status: this.statusIdentifier.status,
+      rawStatus: this.statusIdentifier.rawStatus,
       rawSlug: slugMatch.rawSlug,
+      rawDate: this.dateFormatter.rawDate,
+      dates: this.dateFormatter.dates,
     };
-
-    if (this.dateFormatter.rawDate) {
-      rawEsoStatus.rawDate = this.dateFormatter.rawDate;
-      rawEsoStatus.dates = this.dateFormatter.dates;
-    }
-
-    if (this.statusIdentifier.rawStatus) {
-      rawEsoStatus.rawStatus = this.statusIdentifier.rawStatus;
-    }
-
-    return rawEsoStatus;
   }
 }

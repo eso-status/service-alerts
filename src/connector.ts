@@ -34,6 +34,7 @@ export default class Connector {
 
     this.isolate();
     this.split();
+    this.clean();
     this.fetch();
   }
 
@@ -78,6 +79,27 @@ export default class Connector {
       .forEach((raw: string): void => {
         this.raw.push(raw);
       });
+  }
+
+  /**
+   * Method for removing unwanted elements/characters from an announcement
+   * @private
+   */
+  private clean(): void {
+    this.raw = this.raw.map((raw: string): string => {
+      return raw
+        .replaceAll(/\n/g, '')
+        .replaceAll(' </p><p>', '</p><p>')
+        .replaceAll('  <p>', '<p>')
+        .replaceAll(' </p>', '</p>')
+        .replaceAll(' <p>', '<p>')
+        .replaceAll('</p><p>', ' ')
+        .replaceAll('. &nbsp;', '.')
+        .replaceAll('<p>', '')
+        .replaceAll('</p>', '')
+        .replaceAll('&nbsp;', '')
+        .replaceAll('<div>', '');
+    });
   }
 
   /**

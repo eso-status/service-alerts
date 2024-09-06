@@ -7,12 +7,12 @@ export interface EsoStatusRawData {
   source: string;
   raw: string;
   status: Status;
-  rawStatus?: RemoteRawStatus;
+  rawStatus: RemoteRawStatus;
   slug: Slug;
   rawSlug: RemoteRawSlug;
   type: Type;
   support: Support;
   zone: Zone;
-  dates?: Moment[];
-  rawDate?: string;
+  dates: Moment[];
+  rawDate: string;
 }

@@ -39,120 +39,120 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
 [
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-    raw: '2024.08.27 - 14:40 UTC (10:40 EDT) The PTS is currently available.',
-    slug: 'server_pc_pts',
-    type: 'server',
-    support: 'pc',
-    zone: 'pts',
-    status: 'up',
-    rawSlug: 'PTS',
-    rawDate: '2024.08.27 - 14:40 UTC (10:40 EDT)',
-    dates: [ Moment<2024-08-27T14:40:00Z> ],
-    rawStatus: 'currently available'
-  },
-  {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
-    raw: '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.',
+    raw: '2024.09.04 - 14:00 UTC (10:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
     slug: 'service_store_eso',
     type: 'service',
     support: 'store',
     zone: 'eso',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'ESO store',
-    rawDate: '2024.08.22 - 14:40 UTC (10:40 EDT)',
-    dates: [ Moment<2024-08-22T14:40:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 14:00 UTC (10:00 EDT)',
+    dates: [ Moment<2024-09-04T14:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.22 - 14:40 UTC (10:40 EDT) The ESO store and account system are currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.04 - 14:00 UTC (10:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
     slug: 'service_system_account',
     type: 'service',
     support: 'system',
     zone: 'account',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'account system',
-    rawDate: '2024.08.22 - 14:40 UTC (10:40 EDT)',
-    dates: [ Moment<2024-08-22T14:40:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 14:00 UTC (10:00 EDT)',
+    dates: [ Moment<2024-09-04T14:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.04 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
     slug: 'server_ps_eu',
     type: 'server',
     support: 'ps',
     zone: 'eu',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'The European PlayStation® megaserver',
-    rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-    dates: [ Moment<2024-08-21T11:50:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
+    dates: [ Moment<2024-09-04T10:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.04 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
     slug: 'server_xbox_eu',
     type: 'server',
     support: 'xbox',
     zone: 'eu',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'The European Xbox megaserver',
-    rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-    dates: [ Moment<2024-08-21T11:50:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
+    dates: [ Moment<2024-09-04T10:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.04 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
     slug: 'server_ps_na',
     type: 'server',
     support: 'ps',
     zone: 'na',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'North American PlayStation® megaserver',
-    rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-    dates: [ Moment<2024-08-21T11:50:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
+    dates: [ Moment<2024-09-04T10:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.21 - 11:50 UTC (7:50 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.04 - 10:00 UTC (6:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
     slug: 'server_xbox_na',
     type: 'server',
     support: 'xbox',
     zone: 'na',
-    status: 'up',
+    status: 'down',
+    rawStatus: 'currently unavailable',
     rawSlug: 'The North American Xbox megaserver',
-    rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-    dates: [ Moment<2024-08-21T11:50:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
+    dates: [ Moment<2024-09-04T10:00:00Z> ]
   },
   {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.'
-    slug: 'server_pc_na',
-    type: 'server',
-    support: 'pc',
-    zone: 'na',
-    status: 'up',
-    rawSlug: 'The North American PC/Mac megaserver',
-    rawDate: '2024.08.19 - 17:00 UTC (13:00 EDT)',
-    dates: [ Moment<2024-08-19T17:00:00Z> ],
-    rawStatus: 'currently available'
-  },
-  {
-    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320'
-    raw: '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.'
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.03 - 10:55 UTC (6:55 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
     slug: 'server_pc_eu',
     type: 'server',
     support: 'pc',
     zone: 'eu',
     status: 'up',
+    rawStatus: 'currently available',
     rawSlug: 'The European PC/Mac megaserver',
-    rawDate: '2024.08.19 - 16:00 UTC (12:00 EDT)',
-    dates: [ Moment<2024-08-19T16:00:00Z> ],
-    rawStatus: 'currently available'
+    rawDate: '2024.09.03 - 10:55 UTC (6:55 EDT)',
+    dates: [ Moment<2024-09-03T10:55:00Z> ]
+  },
+  {
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: '2024.09.03 - 10:55 UTC (6:55 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+    slug: 'server_pc_na',
+    type: 'server',
+    support: 'pc',
+    zone: 'na',
+    status: 'up',
+    rawStatus: 'currently available',
+    rawSlug: 'The North American PC/Mac megaserver',
+    rawDate: '2024.09.03 - 10:55 UTC (6:55 EDT)',
+    dates: [ Moment<2024-09-03T10:55:00Z> ]
+  },
+  {
+    source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
+    raw: ' 2024.08.27 - 14:40 UTC (10:40 EDT) The PTS is currently available.',
+    slug: 'server_pc_pts',
+    type: 'server',
+    support: 'pc',
+    zone: 'pts',
+    status: 'up',
+    rawStatus: 'currently available',
+    rawSlug: 'PTS',
+    rawDate: ' 2024.08.27 - 14:40 UTC (10:40 EDT)',
+    dates: [ Moment<Invalid date> ]
   }
 ]
 ```

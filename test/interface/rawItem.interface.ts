@@ -1,10 +1,9 @@
 import { EsoStatusRawData } from '../../src/interface/esoStatusRawData.interface';
 import { SourceUrl } from '../../src/type/sourceUrl.type';
 
-export interface PatternItem {
+export interface RawItem {
   date: string;
   url: SourceUrl;
-  file: string;
-  rawList: string[];
+  raw: string;
   expected: EsoStatusRawData[];
 }
