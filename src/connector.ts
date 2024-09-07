@@ -64,7 +64,7 @@ export default class Connector {
    */
   private isolate(): string {
     return this.remoteContent
-      .split('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')[1]
+      .split('<h1>ESO Service Alerts</h1>')[1]
       .split('</div>')
       .shift();
   }
@@ -88,6 +88,7 @@ export default class Connector {
   private clean(): void {
     this.raw = this.raw.map((raw: string): string => {
       return raw
+        .replaceAll('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->', '')
         .replaceAll(/\n/g, '')
         .replaceAll(' </p><p>', '</p><p>')
         .replaceAll('  <p>', '<p>')
