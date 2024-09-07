@@ -31,6 +31,7 @@ npm i @eso-status/service-alerts
 ### Usage
 ```javascript
 import ServiceAlerts from '@eso-status/service-alerts';
+import { EsoStatusRawData } from '@eso-status/types';
 
 const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
 ```
