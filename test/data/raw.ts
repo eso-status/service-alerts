@@ -1853,5 +1853,141 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-08-13T12_16_34',
+    url: ServiceAlertsUrl,
+    raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        status: DownStatus,
+        rawStatus: 'currently unavailable',
+        slug: ServerPsEuSlug,
+        rawSlug: 'The European PlayStation® megaserver',
+        type: ServerType,
+        support: PsSupport,
+        zone: EuZone,
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 6 - 1)
+            .set('date', 18)
+            .set('hours', 2)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        status: DownStatus,
+        rawStatus: 'currently unavailable',
+        slug: ServerXboxEuSlug,
+        rawSlug: 'The European Xbox megaserver',
+        type: ServerType,
+        support: XboxSupport,
+        zone: EuZone,
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 6 - 1)
+            .set('date', 18)
+            .set('hours', 2)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        status: DownStatus,
+        rawStatus: 'currently unavailable',
+        slug: ServerPsNaSlug,
+        rawSlug: 'North American PlayStation® megaserver',
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 6 - 1)
+            .set('date', 18)
+            .set('hours', 2)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        status: DownStatus,
+        rawStatus: 'currently unavailable',
+        slug: ServerXboxNaSlug,
+        rawSlug: 'The North American Xbox megaserver',
+        type: ServerType,
+        support: XboxSupport,
+        zone: NaZone,
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 6 - 1)
+            .set('date', 18)
+            .set('hours', 2)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
+      },
+    ],
+  },
+  {
+    date: '2024-08-27T14_02_06',
+    url: ServiceAlertsUrl,
+    raw: '2024.08.27 - 14:00 UTC (10:00 EDT) The PTS is currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.08.27 - 14:00 UTC (10:00 EDT) The PTS is currently unavailable while we perform maintenance.',
+        status: DownStatus,
+        rawStatus: 'currently unavailable',
+        slug: ServerPcPtsSlug,
+        rawSlug: 'PTS',
+        type: ServerType,
+        support: PcSupport,
+        zone: PtsZone,
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 8 - 1)
+            .set('date', 27)
+            .set('hours', 14)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawDate: '2024.08.27 - 14:00 UTC (10:00 EDT)',
+      },
+    ],
+  },
 ];
 export default raw;
+
+//
