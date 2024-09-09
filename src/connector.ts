@@ -90,10 +90,10 @@ export default class Connector {
       return raw
         .replaceAll('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->', '')
         .replaceAll(/\n/g, '')
-        .replaceAll(' </p><p>', '</p><p>')
+        .replaceAll('    <p>', '<p>')
         .replaceAll('  <p>', '<p>')
-        .replaceAll(' </p>', '</p>')
         .replaceAll(' <p>', '<p>')
+        .replaceAll(' </p>', '</p>')
         .replaceAll('</p><p>', ' ')
         .replaceAll('. &nbsp;', '.')
         .replaceAll('<p>', '')
