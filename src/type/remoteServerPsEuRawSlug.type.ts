@@ -3,4 +3,5 @@
  */
 export type RemoteServerPsEuRawSlug =
   | 'The European megaservers'
-  | 'The European PlayStation® megaserver';
+  | 'The European PlayStation® megaserver'
+  | 'PlayStation™ Network';
