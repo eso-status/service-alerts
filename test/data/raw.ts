@@ -2073,5 +2073,60 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-10-01T09_02_34',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        slug: ServerPsEuSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: EuZone,
+        status: UpStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 9)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'been resolved',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: UpStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 9)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'been resolved',
+      },
+    ],
+  },
 ];
 export default raw;
