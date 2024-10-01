@@ -22,7 +22,7 @@ export default class Connector {
    * List of slugs whose data has already been retrieved
    * @private
    */
-  private alreadyGet: Slug[] = [];
+  private readonly alreadyGet: Slug[] = [];
 
   /**
    * @param remoteContent Content of the source retrieved
