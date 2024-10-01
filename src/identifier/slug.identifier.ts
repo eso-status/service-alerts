@@ -66,6 +66,7 @@ export default class SlugIdentifier {
   private readonly ServerPsEuMatchesList: RemoteServerPsEuRawSlug[] = [
     'The European megaservers',
     'The European PlayStation® megaserver',
+    'PlayStation™ Network',
   ];
 
   /**
@@ -95,6 +96,7 @@ export default class SlugIdentifier {
   private readonly ServerPsNaMatchesList: RemoteServerPsNaRawSlug[] = [
     'The North American megaservers',
     'North American PlayStation® megaserver',
+    'PlayStation™ Network',
   ];
 
   /**

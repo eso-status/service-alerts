@@ -1987,7 +1987,146 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-09-30T21_05_37',
+    url: ServiceAlertsUrl,
+    raw: '2024.09.30 - 12:00 UTC (8:00 EDT)) The PTS is currently available.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.09.30 - 12:00 UTC (8:00 EDT)) The PTS is currently available.',
+        slug: ServerPcPtsSlug,
+        type: ServerType,
+        support: PcSupport,
+        zone: PtsZone,
+        status: UpStatus,
+        rawSlug: 'PTS',
+        rawDate: '2024.09.30 - 12:00 UTC (8:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 9 - 1)
+            .set('date', 30)
+            .set('hours', 12)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'currently available',
+      },
+    ],
+  },
+  {
+    date: '2024-10-01T01_21_43',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT) The PlayStation™ Network is currently experiencing a service interruption.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT) The PlayStation™ Network is currently experiencing a service interruption.',
+        slug: ServerPsEuSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: EuZone,
+        status: IssuesStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 1)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'currently experiencing a service interruption',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT) The PlayStation™ Network is currently experiencing a service interruption.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: IssuesStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 1)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'currently experiencing a service interruption',
+      },
+    ],
+  },
+  {
+    date: '2024-10-01T09_02_34',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        slug: ServerPsEuSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: EuZone,
+        status: UpStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 9)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'been resolved',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: UpStatus,
+        rawSlug: 'PlayStation™ Network',
+        rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
+        dates: [
+          moment()
+            .utc()
+            .set('years', 2024)
+            .set('months', 10 - 1)
+            .set('date', 1)
+            .set('hours', 9)
+            .set('minutes', 0)
+            .set('seconds', 0)
+            .set('milliseconds', 0)
+            .utcOffset(0),
+        ],
+        rawStatus: 'been resolved',
+      },
+    ],
+  },
 ];
 export default raw;
-
-//
