@@ -5,51 +5,51 @@ import { RemoteRawStatus } from '../type/remoteRawStatus.type';
 import { SourceUrl } from '../type/sourceUrl.type';
 
 /**
- * Donnée brute du status d'un server/service ESO
+ * Raw data of an ESO server/service status
  */
 export interface EsoStatusRawData {
   /**
-   * URL de la source de la donnée
+   * URL of the data source
    */
   source: SourceUrl;
   /**
-   * Donnée brute permettant d'identifier le server/service et son status
+   * Raw data used to identify the server/service and its status
    */
   raw: string;
   /**
-   * Status du server/service
+   * Status of the server/service
    */
   status: Status;
   /**
-   * Donnée brute ayant permis d'identifier le status
+   * Raw data used to identify the status
    */
   rawStatus: RemoteRawStatus;
   /**
-   * Slug du server/service
+   * Slug of the server/service
    */
   slug: Slug;
   /**
-   * Donnée brute ayant permis d'identifier le slug
+   * Raw data used to identify the slug
    */
   rawSlug: RemoteRawSlug;
   /**
-   * Type du server/service
+   * Type of the server/service
    */
   type: Type;
   /**
-   * Support du server/service
+   * Support of the server/service
    */
   support: Support;
   /**
-   * Zone du server/service
+   * Zone of the server/service
    */
   zone: Zone;
   /**
-   * Liste des dates contenue dans l'annonce
+   * List of dates contained in the announcement
    */
   dates: Moment[];
   /**
-   * Donnée brute de la date contenue dans l'annonce
+   * Raw data of the date contained in the announcement
    */
   rawDate: string;
 }
