@@ -32,18 +32,36 @@ describe('ForumMessage (e2e)', (): void => {
         .useFakeTimers()
         .setSystemTime(
           new Date(
-            moment(patternData.date, 'YYYY-MM-DD')
+            moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss')
               .utcOffset(0)
-              .set('years', moment(patternData.date, 'YYYY-MM-DD').get('years'))
+              .set(
+                'years',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('years'),
+              )
               .set(
                 'months',
-                moment(patternData.date, 'YYYY-MM-DD').get('months'),
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('months'),
               )
-              .set('days', moment(patternData.date, 'YYYY-MM-DD').get('days'))
-              .set('hour', 0)
-              .set('hours', 0)
-              .set('minutes', 0)
-              .set('seconds', 0)
+              .set(
+                'days',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('days'),
+              )
+              .set(
+                'hour',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('hour'),
+              )
+              .set(
+                'hours',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('hours'),
+              )
+              .set(
+                'minutes',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('minutes'),
+              )
+              .set(
+                'seconds',
+                moment(patternData.date, 'YYYY-MM-DDTHH_mm_ss').get('seconds'),
+              )
               .set('milliseconds', 0)
               .toISOString(),
           ),
