@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/service-alerts",
-  "version": "2.0.0-dev.3",
+  "version": "2.0.0-dev.4",
   "description": "Library for retrieving and formatting data, available at https://help.elderscrollsonline.com/app/answers/detail/a_id/4320.",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "main": "lib/index.js",
