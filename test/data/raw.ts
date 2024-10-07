@@ -1,4 +1,3 @@
-import * as moment from 'moment';
 import {
   AccountZone,
   DownStatus,
@@ -44,18 +43,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 19)
-            .set('hours', 17)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-19T17:00:00.000Z'],
         rawDate: '2024.08.19 - 17:00 UTC (13:00 EDT)',
       },
     ],
@@ -75,18 +63,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 19)
-            .set('hours', 16)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-19T16:00:00.000Z'],
         rawDate: '2024.08.19 - 16:00 UTC (12:00 EDT)',
       },
     ],
@@ -106,18 +83,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 19)
-            .set('hours', 16)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-19T16:00:00.000Z'],
         rawDate: '2024.08.19 - 16:00 UTC (12:00 EDT)',
       },
     ],
@@ -137,18 +103,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 8)
-            .set('hours', 15)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-08T15:30:00.000Z'],
         rawDate: '2024.08.08 - 15:30 UTC (11:30 EDT)',
       },
       {
@@ -161,18 +116,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 8)
-            .set('hours', 15)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-08T15:30:00.000Z'],
         rawDate: '2024.08.08 - 15:30 UTC (11:30 EDT)',
       },
     ],
@@ -192,18 +136,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 8)
-            .set('hours', 14)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-08T14:50:00.000Z'],
         rawDate: '2024.08.08 - 14:50 UTC (10:50 EDT)',
       },
       {
@@ -216,18 +149,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 8)
-            .set('hours', 14)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-08T14:50:00.000Z'],
         rawDate: '2024.08.08 - 14:50 UTC (10:50 EDT)',
       },
     ],
@@ -247,18 +169,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -271,18 +182,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -295,18 +195,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -319,18 +208,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -343,18 +221,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -367,18 +234,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -391,18 +247,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: PtsZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -415,18 +260,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
       {
@@ -439,18 +273,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 15)
-            .set('minutes', 45)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T15:45:00.000Z'],
         rawDate: '2024.08.07 - 15:45 UTC (11:45 EDT)',
       },
     ],
@@ -470,18 +293,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -494,18 +306,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -518,18 +319,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -542,18 +332,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -566,18 +345,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -590,18 +358,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -614,18 +371,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: PtsZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -638,18 +384,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
       {
@@ -662,18 +397,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 7)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-07T08:00:00.000Z'],
         rawDate: '2024.08.07 - 8:00 UTC (4:00 EDT)',
       },
     ],
@@ -693,18 +417,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 19)
-            .set('hours', 4)
-            .set('minutes', 20)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-19T04:20:00.000Z'],
         rawDate: '2024.07.19 - 4:20 UTC (12:20 EDT)',
       },
       {
@@ -717,18 +430,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 19)
-            .set('hours', 4)
-            .set('minutes', 20)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-19T04:20:00.000Z'],
         rawDate: '2024.07.19 - 4:20 UTC (12:20 EDT)',
       },
     ],
@@ -748,18 +450,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 19)
-            .set('hours', 0)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-19T00:00:00.000Z'],
         rawDate: '2024.07.19 - 0:00 UTC (07.18.24 - 20:00 EDT)',
       },
       {
@@ -772,18 +463,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 19)
-            .set('hours', 0)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-19T00:00:00.000Z'],
         rawDate: '2024.07.19 - 0:00 UTC (07.18.24 - 20:00 EDT)',
       },
     ],
@@ -803,18 +483,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 10)
-            .set('hours', 16)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-10T16:00:00.000Z'],
         rawDate: '2024.07.10 - 16:00 UTC (12:00 EDT)',
       },
     ],
@@ -834,18 +503,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 10)
-            .set('hours', 15)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-10T15:00:00.000Z'],
         rawDate: '2024.07.10 - 15:00 UTC (11:00 EDT)',
       },
     ],
@@ -865,18 +523,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 3)
-            .set('hours', 1)
-            .set('minutes', 20)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-03T01:20:00.000Z'],
         rawDate: '2024.07.03 - 01:20 UTC (2024.07.02 - 21:20 EDT)',
       },
       {
@@ -889,18 +536,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 3)
-            .set('hours', 1)
-            .set('minutes', 20)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-03T01:20:00.000Z'],
         rawDate: '2024.07.03 - 01:20 UTC (2024.07.02 - 21:20 EDT)',
       },
     ],
@@ -920,18 +556,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 2)
-            .set('hours', 18)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-02T18:30:00.000Z'],
         rawDate: '2024.07.02 - 18:30 UTC (14:00 EDT)',
       },
       {
@@ -944,18 +569,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 2)
-            .set('hours', 18)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-02T18:30:00.000Z'],
         rawDate: '2024.07.02 - 18:30 UTC (14:00 EDT)',
       },
     ],
@@ -975,18 +589,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 14)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T14:30:00.000Z'],
         rawDate: '2024.07.01 - 14:30 UTC (10:30 EDT)',
       },
       {
@@ -999,18 +602,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 14)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T14:30:00.000Z'],
         rawDate: '2024.07.01 - 14:30 UTC (10:30 EDT)',
       },
       {
@@ -1023,18 +615,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 14)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T14:30:00.000Z'],
         rawDate: '2024.07.01 - 14:30 UTC (10:30 EDT)',
       },
     ],
@@ -1054,18 +635,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T12:00:00.000Z'],
         rawDate: '2024.07.01 - 12:00 UTC (08:00 EDT)',
       },
       {
@@ -1078,18 +648,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T12:00:00.000Z'],
         rawDate: '2024.07.01 - 12:00 UTC (08:00 EDT)',
       },
       {
@@ -1102,18 +661,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T12:00:00.000Z'],
         rawDate: '2024.07.01 - 12:00 UTC (08:00 EDT)',
       },
       {
@@ -1126,18 +674,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T12:00:00.000Z'],
         rawDate: '2024.07.01 - 12:00 UTC (08:00 EDT)',
       },
       {
@@ -1150,18 +687,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T12:00:00.000Z'],
         rawDate: '2024.07.01 - 12:00 UTC (08:00 EDT)',
       },
     ],
@@ -1181,18 +707,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1205,18 +720,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1229,18 +733,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1253,18 +746,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1277,18 +759,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1301,18 +772,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1325,18 +785,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
       {
@@ -1349,18 +798,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 7 - 1)
-            .set('date', 1)
-            .set('hours', 8)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-07-01T08:00:00.000Z'],
         rawDate: '2024.07.01 - 8:00 UTC (04:00 EDT)',
       },
     ],
@@ -1380,18 +818,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: PtsZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 11)
-            .set('hours', 14)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-11T14:50:00.000Z'],
         rawDate: '2024.06.11 - 14:50 UTC (10:50 EDT)',
       },
     ],
@@ -1411,18 +838,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: PtsZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 11)
-            .set('hours', 14)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-11T14:00:00.000Z'],
         rawDate: '2024.06.11 - 14:00 UTC (10:00 EDT)',
       },
     ],
@@ -1442,18 +858,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 14)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T14:30:00.000Z'],
         rawDate: '2024.06.05 - 14:30 UTC (10:30 EDT)',
       },
       {
@@ -1466,18 +871,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 14)
-            .set('minutes', 30)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T14:30:00.000Z'],
         rawDate: '2024.06.05 - 14:30 UTC (10:30 EDT)',
       },
     ],
@@ -1497,18 +891,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 15)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:15:00.000Z'],
         rawDate: '2024.06.05 - 12:15 UTC (8:15 EDT)',
       },
       {
@@ -1521,18 +904,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 15)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:15:00.000Z'],
         rawDate: '2024.06.05 - 12:15 UTC (8:15 EDT)',
       },
       {
@@ -1545,18 +917,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 15)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:15:00.000Z'],
         rawDate: '2024.06.05 - 12:15 UTC (8:15 EDT)',
       },
       {
@@ -1569,18 +930,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 15)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:15:00.000Z'],
         rawDate: '2024.06.05 - 12:15 UTC (8:15 EDT)',
       },
     ],
@@ -1600,18 +950,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: StoreSupport,
         zone: EsoZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:00:00.000Z'],
         rawDate: '2024.06.05 - 12:00 UTC (8:00 EDT)',
       },
       {
@@ -1624,18 +963,7 @@ const raw: RawItem[] = [
         type: ServiceType,
         support: SystemSupport,
         zone: AccountZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T12:00:00.000Z'],
         rawDate: '2024.06.05 - 12:00 UTC (8:00 EDT)',
       },
     ],
@@ -1655,18 +983,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 10)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T10:00:00.000Z'],
         rawDate: '2024.06.05 - 10:00 UTC (06:00 EDT)',
       },
       {
@@ -1679,18 +996,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 10)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T10:00:00.000Z'],
         rawDate: '2024.06.05 - 10:00 UTC (06:00 EDT)',
       },
       {
@@ -1703,18 +1009,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 10)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T10:00:00.000Z'],
         rawDate: '2024.06.05 - 10:00 UTC (06:00 EDT)',
       },
       {
@@ -1727,18 +1022,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 5)
-            .set('hours', 10)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-05T10:00:00.000Z'],
         rawDate: '2024.06.05 - 10:00 UTC (06:00 EDT)',
       },
     ],
@@ -1758,18 +1042,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 3)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-03T12:00:00.000Z'],
         rawDate: '2024.06.03 - 12:00 UTC (08:00 EDT)',
       },
       {
@@ -1782,18 +1055,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 3)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-03T12:00:00.000Z'],
         rawDate: '2024.06.03 - 12:00 UTC (08:00 EDT)',
       },
     ],
@@ -1813,18 +1075,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 3)
-            .set('hours', 6)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-03T06:00:00.000Z'],
         rawDate: '2024.06.03 - 6:00 UTC (02:00 EDT)',
       },
       {
@@ -1837,18 +1088,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 3)
-            .set('hours', 6)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-03T06:00:00.000Z'],
         rawDate: '2024.06.03 - 6:00 UTC (02:00 EDT)',
       },
     ],
@@ -1868,18 +1108,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 18)
-            .set('hours', 2)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-18T02:00:00.000Z'],
         rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
       },
       {
@@ -1892,18 +1121,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: EuZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 18)
-            .set('hours', 2)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-18T02:00:00.000Z'],
         rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
       },
       {
@@ -1916,18 +1134,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PsSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 18)
-            .set('hours', 2)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-18T02:00:00.000Z'],
         rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
       },
       {
@@ -1940,18 +1147,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: XboxSupport,
         zone: NaZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 6 - 1)
-            .set('date', 18)
-            .set('hours', 2)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-06-18T02:00:00.000Z'],
         rawDate: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT)',
       },
     ],
@@ -1971,18 +1167,7 @@ const raw: RawItem[] = [
         type: ServerType,
         support: PcSupport,
         zone: PtsZone,
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 27)
-            .set('hours', 14)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-27T14:00:00.000Z'],
         rawDate: '2024.08.27 - 14:00 UTC (10:00 EDT)',
       },
     ],
@@ -2002,18 +1187,7 @@ const raw: RawItem[] = [
         status: UpStatus,
         rawSlug: 'PTS',
         rawDate: '2024.09.30 - 12:00 UTC (8:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 9 - 1)
-            .set('date', 30)
-            .set('hours', 12)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-09-30T12:00:00.000Z'],
         rawStatus: 'currently available',
       },
     ],
@@ -2033,18 +1207,7 @@ const raw: RawItem[] = [
         status: IssuesStatus,
         rawSlug: 'PlayStation™ Network',
         rawDate: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 10 - 1)
-            .set('date', 1)
-            .set('hours', 1)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-10-01T01:00:00.000Z'],
         rawStatus: 'currently experiencing a service interruption',
       },
       {
@@ -2057,18 +1220,7 @@ const raw: RawItem[] = [
         status: IssuesStatus,
         rawSlug: 'PlayStation™ Network',
         rawDate: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 10 - 1)
-            .set('date', 1)
-            .set('hours', 1)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-10-01T01:00:00.000Z'],
         rawStatus: 'currently experiencing a service interruption',
       },
     ],
@@ -2088,18 +1240,7 @@ const raw: RawItem[] = [
         status: UpStatus,
         rawSlug: 'PlayStation™ Network',
         rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 10 - 1)
-            .set('date', 1)
-            .set('hours', 9)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-10-01T09:00:00.000Z'],
         rawStatus: 'been resolved',
       },
       {
@@ -2112,19 +1253,74 @@ const raw: RawItem[] = [
         status: UpStatus,
         rawSlug: 'PlayStation™ Network',
         rawDate: '2024.10.01 - 09:00 UTC (05:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 10 - 1)
-            .set('date', 1)
-            .set('hours', 9)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-10-01T09:00:00.000Z'],
         rawStatus: 'been resolved',
+      },
+    ],
+  },
+  {
+    date: '2024-10-02T19_39_56',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        slug: ServerPsEuSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: EuZone,
+        status: UpStatus,
+        rawSlug: 'The European PlayStation® megaserver',
+        rawDate: '2024.10.02 - 19:40 UTC (15:40 EDT)',
+        dates: ['2024-10-02T19:40:00.000Z'],
+        rawStatus: 'currently available',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: UpStatus,
+        rawSlug: 'North American PlayStation® megaserver',
+        rawDate: '2024.10.02 - 19:40 UTC (15:40 EDT)',
+        dates: ['2024-10-02T19:40:00.000Z'],
+        rawStatus: 'currently available',
+      },
+    ],
+  },
+  {
+    date: '2024-10-02T16_14_00',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        slug: ServerXboxEuSlug,
+        type: ServerType,
+        support: XboxSupport,
+        zone: EuZone,
+        status: UpStatus,
+        rawSlug: 'The European Xbox megaserver',
+        rawDate: '2024.10.02 - 16:00 UTC (12:00 EDT)',
+        dates: ['2024-10-02T16:00:00.000Z'],
+        rawStatus: 'currently available',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        slug: ServerXboxNaSlug,
+        type: ServerType,
+        support: XboxSupport,
+        zone: NaZone,
+        status: UpStatus,
+        rawSlug: 'The North American Xbox megaserver',
+        rawDate: '2024.10.02 - 16:00 UTC (12:00 EDT)',
+        dates: ['2024-10-02T16:00:00.000Z'],
+        rawStatus: 'currently available',
       },
     ],
   },

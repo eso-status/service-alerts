@@ -1,4 +1,3 @@
-import { Moment } from 'moment';
 import * as moment from 'moment';
 
 /**
@@ -11,9 +10,9 @@ export default class DateFormatter {
   public rawDate: string;
 
   /**
-   * List of dates formatted correctly contained in the announcement
+   * List of dates formatted correctly contained in the announcement (ISO 8601)
    */
-  public dates: Moment[];
+  public dates: string[];
 
   /**
    * @param raw Raw data of the announcement
@@ -35,7 +34,8 @@ export default class DateFormatter {
         .set('minutes', Number(hourData.split(':')[1]))
         .set('seconds', 0)
         .set('milliseconds', 0)
-        .utcOffset(0),
+        .utcOffset(0)
+        .toISOString(),
     ];
   }
 }

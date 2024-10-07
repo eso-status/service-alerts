@@ -1,4 +1,3 @@
-import { Moment } from 'moment/moment';
 import { Slug, Status, Support, Type, Zone } from '@eso-status/types';
 import { RemoteRawSlug } from '../type/remoteRawSlug.type';
 import { RemoteRawStatus } from '../type/remoteRawStatus.type';
@@ -45,9 +44,9 @@ export interface EsoStatusRawData {
    */
   zone: Zone;
   /**
-   * List of dates contained in the announcement
+   * List of dates contained in the announcement (ISO 8601)
    */
-  dates: Moment[];
+  dates: string[];
   /**
    * Raw data of the date contained in the announcement
    */
