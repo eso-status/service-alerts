@@ -23,7 +23,6 @@ import {
   UpStatus,
   XboxSupport,
 } from '@eso-status/types';
-import * as moment from 'moment';
 import ServiceAlertsUrl from '../../src/const';
 import { PatternItem } from '../interface/patternItem.interface';
 
@@ -96,18 +95,7 @@ const pattern20240827: PatternItem[] = [
         status: DownStatus,
         rawSlug: 'PTS',
         rawDate: '2024.08.27 - 14:00 UTC (10:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 27)
-            .set('hours', 14)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-27T14:00:00.000Z'],
         rawStatus: 'currently unavailable',
       },
       {
@@ -120,18 +108,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'ESO store',
         rawDate: '2024.08.22 - 14:40 UTC (10:40 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 22)
-            .set('hours', 14)
-            .set('minutes', 40)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-22T14:40:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -144,18 +121,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'account system',
         rawDate: '2024.08.22 - 14:40 UTC (10:40 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 22)
-            .set('hours', 14)
-            .set('minutes', 40)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-22T14:40:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -168,18 +134,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'The European PlayStation® megaserver',
         rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 21)
-            .set('hours', 11)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-21T11:50:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -192,18 +147,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'The European Xbox megaserver',
         rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 21)
-            .set('hours', 11)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-21T11:50:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -216,18 +160,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'North American PlayStation® megaserver',
         rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 21)
-            .set('hours', 11)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-21T11:50:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -240,18 +173,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'The North American Xbox megaserver',
         rawDate: '2024.08.21 - 11:50 UTC (7:50 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 21)
-            .set('hours', 11)
-            .set('minutes', 50)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-21T11:50:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -264,18 +186,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'The North American PC/Mac megaserver',
         rawDate: '2024.08.19 - 17:00 UTC (13:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 19)
-            .set('hours', 17)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-19T17:00:00.000Z'],
         rawStatus: 'currently available',
       },
       {
@@ -288,18 +199,7 @@ const pattern20240827: PatternItem[] = [
         status: UpStatus,
         rawSlug: 'The European PC/Mac megaserver',
         rawDate: '2024.08.19 - 16:00 UTC (12:00 EDT)',
-        dates: [
-          moment()
-            .utc()
-            .set('years', 2024)
-            .set('months', 8 - 1)
-            .set('date', 19)
-            .set('hours', 16)
-            .set('minutes', 0)
-            .set('seconds', 0)
-            .set('milliseconds', 0)
-            .utcOffset(0),
-        ],
+        dates: ['2024-08-19T16:00:00.000Z'],
         rawStatus: 'currently available',
       },
     ],

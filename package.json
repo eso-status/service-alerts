@@ -84,7 +84,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eso-status/types": "2.0.0-dev.12",
+    "@eso-status/types": "2.0.0-dev.13",
     "axios": "1.7.7",
     "moment": "2.30.1"
   },
