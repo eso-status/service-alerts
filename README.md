@@ -49,7 +49,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'ESO store',
     rawDate: '2024.09.04 - 14:00 UTC (10:00 EDT)',
-    dates: [ Moment<2024-09-04T14:00:00Z> ]
+    dates: [ '2024-09-04T14:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -62,7 +62,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'account system',
     rawDate: '2024.09.04 - 14:00 UTC (10:00 EDT)',
-    dates: [ Moment<2024-09-04T14:00:00Z> ]
+    dates: [ '2024-09-04T14:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -75,7 +75,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'The European PlayStation® megaserver',
     rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
-    dates: [ Moment<2024-09-04T10:00:00Z> ]
+    dates: [ '2024-09-04T10:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -88,7 +88,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'The European Xbox megaserver',
     rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
-    dates: [ Moment<2024-09-04T10:00:00Z> ]
+    dates: [ '2024-09-04T10:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -101,7 +101,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'North American PlayStation® megaserver',
     rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
-    dates: [ Moment<2024-09-04T10:00:00Z> ]
+    dates: [ '2024-09-04T10:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -114,7 +114,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently unavailable',
     rawSlug: 'The North American Xbox megaserver',
     rawDate: '2024.09.04 - 10:00 UTC (6:00 EDT)',
-    dates: [ Moment<2024-09-04T10:00:00Z> ]
+    dates: [ '2024-09-04T10:00:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -127,7 +127,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently available',
     rawSlug: 'The European PC/Mac megaserver',
     rawDate: '2024.09.03 - 10:55 UTC (6:55 EDT)',
-    dates: [ Moment<2024-09-03T10:55:00Z> ]
+    dates: [ '2024-09-03T10:55:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -140,7 +140,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently available',
     rawSlug: 'The North American PC/Mac megaserver',
     rawDate: '2024.09.03 - 10:55 UTC (6:55 EDT)',
-    dates: [ Moment<2024-09-03T10:55:00Z> ]
+    dates: [ '2024-09-03T10:55:00Z' ]
   },
   {
     source: 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320',
@@ -153,7 +153,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     rawStatus: 'currently available',
     rawSlug: 'PTS',
     rawDate: ' 2024.08.27 - 14:40 UTC (10:40 EDT)',
-    dates: [ Moment<Invalid date> ]
+    dates: [ 'Invalid date' ]
   }
 ]
 ```
