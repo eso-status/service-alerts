@@ -1397,5 +1397,25 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-10-16T18_06_38',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.16 - 18:00 UTC (14:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.16 - 18:00 UTC (14:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+        slug: ServerXboxEuSlug,
+        type: ServerType,
+        support: XboxSupport,
+        zone: EuZone,
+        status: DownStatus,
+        rawSlug: 'The European Xbox megaserver',
+        rawDate: '2024.10.16 - 18:00 UTC (14:00 EDT)',
+        dates: ['2024-10-16T18:00:00.000Z'],
+        rawStatus: 'currently unavailable',
+      },
+    ],
+  },
 ];
 export default raw;
