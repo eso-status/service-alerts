@@ -138,7 +138,7 @@ const esoStatusRawDataList: EsoStatusRawData[] = await ServiceAlerts.getData();
     zone: 'na',
     status: 'up',
     rawStatus: 'currently available',
-    rawSlug: 'The North American PC/Mac megaserver',
+    rawSlug: 'North American PC/Mac megaserver',
     rawDate: '2024.09.03 - 10:55 UTC (6:55 EDT)',
     dates: [ '2024-09-03T10:55:00Z' ]
   },
