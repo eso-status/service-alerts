@@ -86,7 +86,7 @@ export default class SlugIdentifier {
    */
   private readonly ServerPcNaMatchesList: RemoteServerPcNaRawSlug[] = [
     'The North American megaservers',
-    'The North American PC/Mac megaserver',
+    'North American PC/Mac megaserver',
   ];
 
   /**
