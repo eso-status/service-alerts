@@ -141,7 +141,7 @@ const pattern20240930: PatternItem[] = [
         support: PcSupport,
         zone: NaZone,
         status: UpStatus,
-        rawSlug: 'The North American PC/Mac megaserver',
+        rawSlug: 'North American PC/Mac megaserver',
         rawDate: '2024.09.30 - 13:30 UTC (9:30 EDT)',
         dates: ['2024-09-30T13:30:00.000Z'],
         rawStatus: 'currently available',
