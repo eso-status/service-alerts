@@ -99,7 +99,8 @@ export default class Connector {
         .replaceAll('<p>', '')
         .replaceAll('</p>', '')
         .replaceAll('&nbsp;', '')
-        .replaceAll('<div>', '');
+        .replaceAll('<div>', '')
+        .replaceAll('American  PlayStation®', 'American PlayStation®');
     });
   }
 
