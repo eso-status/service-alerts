@@ -1457,5 +1457,45 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-11-04T15_04_04',
+    url: ServiceAlertsUrl,
+    raw: '2024.11.04 - 15:00 UTC (10:00 EST)) The PTS is currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.11.04 - 15:00 UTC (10:00 EST)) The PTS is currently unavailable while we perform maintenance.',
+        slug: ServerPcPtsSlug,
+        type: ServerType,
+        support: PcSupport,
+        zone: PtsZone,
+        status: DownStatus,
+        rawSlug: 'PTS',
+        rawDate: '2024.11.04 - 15:00 UTC (10:00 EST)',
+        dates: ['2024-11-04T15:00:00.000Z'],
+        rawStatus: 'currently unavailable',
+      },
+    ],
+  },
+  {
+    date: '2024-11-04T16_09_59',
+    url: ServiceAlertsUrl,
+    raw: '2024.11.04 - 16:00 UTC (11:00 EST)) The PTS is currently available.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.11.04 - 16:00 UTC (11:00 EST)) The PTS is currently available.',
+        slug: ServerPcPtsSlug,
+        type: ServerType,
+        support: PcSupport,
+        zone: PtsZone,
+        status: UpStatus,
+        rawSlug: 'PTS',
+        rawDate: '2024.11.04 - 16:00 UTC (11:00 EST)',
+        dates: ['2024-11-04T16:00:00.000Z'],
+        rawStatus: 'currently available',
+      },
+    ],
+  },
 ];
 export default raw;
