@@ -1537,5 +1537,38 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-11-06T14_02_24',
+    url: ServiceAlertsUrl,
+    raw: '2024.11.06 - 14:00 UTC (9:00 EST) The ESO store and account system are currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.11.06 - 14:00 UTC (9:00 EST) The ESO store and account system are currently unavailable while we perform maintenance.',
+        slug: ServiceStoreEsoSlug,
+        type: ServiceType,
+        support: StoreSupport,
+        zone: EsoZone,
+        status: DownStatus,
+        rawSlug: 'ESO store',
+        rawDate: '2024.11.06 - 14:00 UTC (9:00 EST)',
+        dates: ['2024-11-06T14:00:00.000Z'],
+        rawStatus: 'currently unavailable',
+      },
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.11.06 - 14:00 UTC (9:00 EST) The ESO store and account system are currently unavailable while we perform maintenance.',
+        slug: ServiceSystemAccountSlug,
+        type: ServiceType,
+        support: SystemSupport,
+        zone: AccountZone,
+        status: DownStatus,
+        rawSlug: 'account system',
+        rawDate: '2024.11.06 - 14:00 UTC (9:00 EST)',
+        dates: ['2024-11-06T14:00:00.000Z'],
+        rawStatus: 'currently unavailable',
+      },
+    ],
+  },
 ];
 export default raw;
