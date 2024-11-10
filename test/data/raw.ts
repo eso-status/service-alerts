@@ -1497,5 +1497,45 @@ const raw: RawItem[] = [
       },
     ],
   },
+  {
+    date: '2024-10-29T21_25_17',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.29 - 21:20 UTC (17:20 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.29 - 21:20 UTC (17:20 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: DownStatus,
+        rawSlug: 'North American PlayStation® megaserver',
+        rawDate: '2024.10.29 - 21:20 UTC (17:20 EDT)',
+        dates: ['2024-10-29T21:20:00.000Z'],
+        rawStatus: 'currently unavailable',
+      },
+    ],
+  },
+  {
+    date: '2024-10-29T23_45_52',
+    url: ServiceAlertsUrl,
+    raw: '2024.10.29 - 23:45 UTC (19:45 EDT) The North American PlayStation® megaserver is currently available.',
+    expected: [
+      {
+        source: ServiceAlertsUrl,
+        raw: '2024.10.29 - 23:45 UTC (19:45 EDT) The North American PlayStation® megaserver is currently available.',
+        slug: ServerPsNaSlug,
+        type: ServerType,
+        support: PsSupport,
+        zone: NaZone,
+        status: UpStatus,
+        rawSlug: 'North American PlayStation® megaserver',
+        rawDate: '2024.10.29 - 23:45 UTC (19:45 EDT)',
+        dates: ['2024-10-29T23:45:00.000Z'],
+        rawStatus: 'currently available',
+      },
+    ],
+  },
 ];
 export default raw;
