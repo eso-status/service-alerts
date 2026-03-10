@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - "main"
+      - 'main'
 
 jobs:
   cd:
@@ -14,12 +14,12 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6.0.2
 
       - name: Install node
-        uses: actions/setup-node@v4.2.0
+        uses: actions/setup-node@v6.3.0
         with:
-          node-version: 22.14.0
+          node-version: 24.14.0
 
       - name: Get version
         id: get_version
@@ -35,7 +35,7 @@ jobs:
 
       - name: Install npm dependencies
         if: steps.tag_exist.outputs.exist == 0
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Build
         if: steps.tag_exist.outputs.exist == 0
@@ -43,15 +43,16 @@ jobs:
 
       - name: Publish to NPM
         if: steps.tag_exist.outputs.exist == 0
-        uses: JS-DevTools/npm-publish@v3.1.1
+        uses: JS-DevTools/npm-publish@0fd2f4369c5d6bcfcde6091a7c527d810b9b5c3f
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          access: "public"
+          access: 'public'
+          tag: 'beta'
 
       - name: Config git
         if: steps.tag_exist.outputs.exist == 0
         run: |
-          git config --global user.email "contact@dov118.dev"
+          git config --global user.email "contact.dov118.dev@gmail.com"
           git config --global user.name "dov118"
 
       - name: Set tag

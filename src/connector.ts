@@ -53,9 +53,7 @@ export default class Connector {
     const response: AxiosResponse<string> =
       await axios.get<string>(ServiceAlertsUrl);
 
-    return response?.status === 200 && !!response?.data
-      ? String(response?.data)
-      : '';
+    return response.status === 200 && !!response.data ? response.data : '';
   }
 
   /**
@@ -109,7 +107,9 @@ export default class Connector {
    * @private
    */
   private fetch(): void {
-    this.raw.forEach((raw: string): void => this.getEach(raw));
+    this.raw.forEach((raw: string): void => {
+      this.getEach(raw);
+    });
   }
 
   /**
@@ -118,9 +118,9 @@ export default class Connector {
    * @private
    */
   private getEach(raw: string): void {
-    new Raw(raw).matches.forEach((match: EsoStatusRawData): void =>
-      this.populateRawEsoStatus(match),
-    );
+    new Raw(raw).matches.forEach((match: EsoStatusRawData): void => {
+      this.populateRawEsoStatus(match);
+    });
   }
 
   /**
