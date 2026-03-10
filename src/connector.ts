@@ -27,12 +27,13 @@ export default class Connector {
   /**
    * @param remoteContent Content of the source retrieved
    */
-  constructor(private readonly remoteContent: string) {
+  constructor(private remoteContent: string) {
     if (!this.remoteContent) {
       return;
     }
 
     this.isolate();
+    this.cleanBefore();
     this.split();
     this.clean();
     this.fetch();
@@ -68,6 +69,14 @@ export default class Connector {
   }
 
   /**
+   * Method for removing unwanted elements/characters from an announcement before split
+   * @private
+   */
+  private cleanBefore(): void {
+    this.remoteContent = this.remoteContent.replaceAll('<hr>', '<hr />');
+  }
+
+  /**
    * Method for separating announcement blocks
    * @private
    */
@@ -99,6 +108,10 @@ export default class Connector {
         .replaceAll('&nbsp;', '')
         .replaceAll('<div>', '')
         .replaceAll('American  PlayStation®', 'American PlayStation®');
+    });
+
+    this.raw = this.raw.filter((raw: string): boolean => {
+      return raw !== ' ';
     });
   }
 
