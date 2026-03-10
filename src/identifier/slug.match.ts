@@ -18,20 +18,20 @@ export default class SlugMatch {
    * Method for retrieving the type of the slug
    */
   public getType(): Type {
-    return <Type>this.slug.split('_')[0];
+    return this.slug.split('_')[0] as Type;
   }
 
   /**
    * Method for retrieving the support of the slug
    */
   public getSupport(): Support {
-    return <Support>this.slug.split('_')[1];
+    return this.slug.split('_')[1] as Support;
   }
 
   /**
    * Method for retrieving the area of the slug
    */
   public getZone(): Zone {
-    return <Zone>this.slug.split('_')[2];
+    return this.slug.split('_')[2] as Zone;
   }
 }
