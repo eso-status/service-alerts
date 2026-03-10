@@ -87,7 +87,7 @@ export default class Connector {
     this.raw = this.raw.map((raw: string): string => {
       return raw
         .replaceAll('<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->', '')
-        .replaceAll(/\n/g, '')
+        .replaceAll('\n', '')
         .replaceAll('    <p>', '<p>')
         .replaceAll('  <p>', '<p>')
         .replaceAll(' <p>', '<p>')
