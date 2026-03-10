@@ -1,10 +1,6 @@
 {
-  "ignore": [
-    "node_modules/*",
-    "lib/**"
-  ],
-  "watch": [
-    "src/*"
-  ],
-  "ext": "ts"
+  "ignore": ["node_modules", "lib", "coverage"],
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "npm run dev"
 }

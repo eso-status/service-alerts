@@ -4,6 +4,7 @@ import Connector from './connector';
 /**
  * Class for retrieving announcement information
  */
+/* eslint-disable @typescript-eslint/no-extraneous-class */
 export default class ServiceAlerts {
   /**
    * Method for retrieving announcement information
@@ -12,3 +13,4 @@ export default class ServiceAlerts {
     return (await Connector.init()).rawEsoStatus;
   }
 }
+/* eslint-enable @typescript-eslint/no-extraneous-class */

@@ -3,6 +3,7 @@ import { RemoteIssuesRawStatus } from '../type/remoteIssuesRawStatus.type';
 import { RemoteDownRawStatus } from '../type/remoteDownRawStatus.type';
 import { RemoteUpRawStatus } from '../type/remoteUpRawStatus.type';
 import { RemoteRawStatus } from '../type/remoteRawStatus.type';
+import { StatusMatchesList } from '../type/statusMatchesList.type';
 
 /**
  * Class for identifying the status contained in an announcement
@@ -54,7 +55,9 @@ export default class StatusIdentifier {
    * @param raw Raw data of the announcement
    */
   constructor(private readonly raw: string) {
-    this.statusList.forEach((status: Status): void => this.identify(status));
+    this.statusList.forEach((status: Status): void => {
+      this.identify(status);
+    });
   }
 
   /**
@@ -63,7 +66,8 @@ export default class StatusIdentifier {
    * @private
    */
   private getMatchList(status: Status): RemoteRawStatus[] {
-    return <RemoteRawStatus[]>this[`${status}MatchesList`];
+    const key = `${status}MatchesList` as StatusMatchesList;
+    return this[key] as RemoteRawStatus[];
   }
 
   /**
