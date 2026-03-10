@@ -1,24 +1,20 @@
-import eslint from '@eslint/js';
+import js from '@eslint/js';
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
+import eslintConfigPrettier from 'eslint-config-prettier';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unusedImports from 'eslint-plugin-unused-imports';
 import jestPlugin from 'eslint-plugin-jest';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import globals from 'globals';
 
-export default tseslint.config(
+export default defineConfig([
   {
     ignores: ['lib/', 'coverage/', 'node_modules/', 'eslint.config.mjs'],
   },
-
   {
-    ignores: ['lib/', 'coverage/', 'eslint.config.mjs'],
-  },
-  eslint.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
-  {
-    files: ['src/**/*.ts'],
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    plugins: { js },
+    extends: ['js/recommended'],
     languageOptions: {
       globals: globals.node,
       parser: tseslint.parser,
@@ -27,23 +23,19 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+  },
+  ...tseslint.configs.recommended,
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.recommendedTypeCheckedOnly,
+  ...tseslint.configs.stylisticTypeChecked,
+  {
     plugins: {
       'unused-imports': unusedImports,
     },
     rules: {
-      'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'error',
-      'unused-imports/no-unused-vars': [
-        'warn',
-        {
-          vars: 'all',
-          varsIgnorePattern: '^_',
-          args: 'after-used',
-          argsIgnorePattern: '^_',
-        },
-      ],
-      '@typescript-eslint/no-explicit-any': 'warn',
+      'unused-imports/no-unused-vars': 'error',
+      '@typescript-eslint/no-explicit-any': 'error',
     },
   },
   {
@@ -61,14 +53,7 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    rules: {
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/unbound-method': 'off',
-      'sonarjs/no-duplicate-string': 'off',
-    },
   },
   sonarjs.configs.recommended,
   eslintConfigPrettier,
-);
+]);
