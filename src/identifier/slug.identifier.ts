@@ -58,6 +58,7 @@ export default class SlugIdentifier {
   private readonly ServerPcEuMatchesList: RemoteServerPcEuRawSlug[] = [
     'The European megaservers',
     'The European PC/Mac megaserver',
+    'North American and European PC/Mac megaservers',
   ];
 
   /**
@@ -88,6 +89,7 @@ export default class SlugIdentifier {
   private readonly ServerPcNaMatchesList: RemoteServerPcNaRawSlug[] = [
     'The North American megaservers',
     'North American PC/Mac megaserver',
+    'North American and European PC/Mac megaservers',
   ];
 
   /**
