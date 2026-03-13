@@ -3,4 +3,5 @@
  */
 export type RemoteServerPcEuRawSlug =
   | 'The European megaservers'
-  | 'The European PC/Mac megaserver';
+  | 'The European PC/Mac megaserver'
+  | 'North American and European PC/Mac megaservers';
