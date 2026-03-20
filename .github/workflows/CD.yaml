@@ -43,7 +43,7 @@ jobs:
 
       - name: Publish to NPM
         if: steps.tag_exist.outputs.exist == 0
-        uses: JS-DevTools/npm-publish@0fd2f4369c5d6bcfcde6091a7c527d810b9b5c3f
+        uses: JS-DevTools/npm-publish@0fd2f4369c5d6bcfcde6091a7c527d810b9b5c3f # 4.1.5
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: 'public'
