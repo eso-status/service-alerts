@@ -75,10 +75,16 @@ const pattern20240813: PatternItem[] = [
       '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
       '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
     ],
+    patternList: [
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
+    ],
     expected: [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -92,6 +98,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         slug: ServerXboxNaSlug,
         type: ServerType,
         support: XboxSupport,
@@ -105,6 +113,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServerPcEuSlug,
         type: ServerType,
         support: PcSupport,
@@ -118,6 +128,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -131,6 +143,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -144,6 +158,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -157,6 +173,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -170,6 +188,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServiceStoreEsoSlug,
         type: ServiceType,
         support: StoreSupport,
@@ -183,6 +203,8 @@ const pattern20240813: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         slug: ServiceSystemAccountSlug,
         type: ServiceType,
         support: SystemSupport,

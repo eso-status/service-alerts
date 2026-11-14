@@ -2,6 +2,7 @@ import { Slug, Status, Support, Type, Zone } from '@eso-status/types';
 import { RemoteRawSlug } from '../type/remoteRawSlug.type';
 import { RemoteRawStatus } from '../type/remoteRawStatus.type';
 import { SourceUrl } from '../type/sourceUrl.type';
+import { MessagePatternType } from '../type/messagePattern.type';
 
 /**
  * Raw data of an ESO server/service status
@@ -15,6 +16,10 @@ export interface EsoStatusRawData {
    * Raw data used to identify the server/service and its status
    */
   raw: string;
+  /**
+   * Pattern that matched the raw message from the data source
+   */
+  pattern: MessagePatternType;
   /**
    * Status of the server/service
    */

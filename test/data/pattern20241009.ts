@@ -115,10 +115,20 @@ const pattern20241009: PatternItem[] = [
       '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
       '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
     ],
+    patternList: [
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
+    ],
     expected: [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 2:00 UTC (2024.10.08 - 10:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -132,6 +142,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.07 - 18:00 UTC (14:00 EDT)) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -145,6 +157,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -158,6 +172,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -171,6 +187,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
         slug: ServerXboxNaSlug,
         type: ServerType,
         support: XboxSupport,
@@ -184,6 +202,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcEuSlug,
         type: ServerType,
         support: PcSupport,
@@ -197,6 +217,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -210,6 +232,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceStoreEsoSlug,
         type: ServiceType,
         support: StoreSupport,
@@ -223,6 +247,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceSystemAccountSlug,
         type: ServiceType,
         support: SystemSupport,
@@ -324,10 +350,20 @@ const pattern20241009: PatternItem[] = [
       '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
       '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
     ],
+    patternList: [
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
+    ],
     expected: [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 10:00 UTC (6:00 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -341,6 +377,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 10:00 UTC (6:00 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -354,6 +392,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 2:00 UTC (2024.10.08 - 10:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -367,6 +407,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.07 - 18:00 UTC (14:00 EDT)) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -380,6 +422,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
         slug: ServerXboxNaSlug,
         type: ServerType,
         support: XboxSupport,
@@ -393,6 +437,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcEuSlug,
         type: ServerType,
         support: PcSupport,
@@ -406,6 +452,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -419,6 +467,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceStoreEsoSlug,
         type: ServiceType,
         support: StoreSupport,
@@ -432,6 +482,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceSystemAccountSlug,
         type: ServiceType,
         support: SystemSupport,
@@ -535,10 +587,20 @@ const pattern20241009: PatternItem[] = [
       '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
       '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
     ],
+    patternList: [
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European Xbox megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+      '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
+    ],
     expected: [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 20:30 UTC (16:30 EDT) The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European Xbox megaserver is currently available.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -552,6 +614,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 12:45 UTC (8:45 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -565,6 +629,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 12:45 UTC (8:45 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -578,6 +644,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.07 - 18:00 UTC (14:00 EDT)) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -591,6 +659,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
         slug: ServerXboxNaSlug,
         type: ServerType,
         support: XboxSupport,
@@ -604,6 +674,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcEuSlug,
         type: ServerType,
         support: PcSupport,
@@ -617,6 +689,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 13:30 UTC (9:30 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -630,6 +704,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceStoreEsoSlug,
         type: ServiceType,
         support: StoreSupport,
@@ -643,6 +719,8 @@ const pattern20241009: PatternItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.04 - 14:55 UTC (10:55 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         slug: ServiceSystemAccountSlug,
         type: ServiceType,
         support: SystemSupport,

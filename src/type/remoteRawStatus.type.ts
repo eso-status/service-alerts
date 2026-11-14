@@ -6,6 +6,4 @@ import { RemoteIssuesRawStatus } from './remoteIssuesRawStatus.type';
  * Different statuses of announcements
  */
 export type RemoteRawStatus =
-  | RemoteUpRawStatus
-  | RemoteDownRawStatus
-  | RemoteIssuesRawStatus;
+  RemoteUpRawStatus | RemoteDownRawStatus | RemoteIssuesRawStatus;

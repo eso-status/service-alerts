@@ -36,6 +36,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.19 - 17:00 UTC (13:00 EDT) The North American PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcNaSlug,
@@ -56,6 +58,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European PC/Mac megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcEuSlug,
@@ -76,6 +80,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.19 - 16:00 UTC (12:00 EDT) The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European PC/Mac megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcEuSlug,
@@ -96,6 +102,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxEuSlug,
@@ -109,6 +117,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 15:30 UTC (11:30 EDT) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American and European Xbox megaservers have been resolved at this time.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxNaSlug,
@@ -129,6 +139,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 14:50 UTC (10:50 EDT) We are currently investigating issues some players are having logging into the North American and European Xbox megaservers.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) We are currently investigating issues some players are having logging into the North American and European Xbox megaservers.',
         status: IssuesStatus,
         rawStatus: 'currently investigating',
         slug: ServerXboxEuSlug,
@@ -142,6 +154,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.08 - 14:50 UTC (10:50 EDT) We are currently investigating issues some players are having logging into the North American and European Xbox megaservers.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) We are currently investigating issues some players are having logging into the North American and European Xbox megaservers.',
         status: IssuesStatus,
         rawStatus: 'currently investigating',
         slug: ServerXboxNaSlug,
@@ -162,6 +176,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcEuSlug,
@@ -175,6 +191,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsEuSlug,
@@ -188,6 +206,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxEuSlug,
@@ -201,6 +221,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcNaSlug,
@@ -214,6 +236,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsNaSlug,
@@ -227,6 +251,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxNaSlug,
@@ -240,6 +266,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcPtsSlug,
@@ -253,6 +281,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceStoreEsoSlug,
@@ -266,6 +296,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 15:45 UTC (11:45 EDT) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The European megaservers are currently available. The PTS is currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceSystemAccountSlug,
@@ -286,6 +318,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcEuSlug,
@@ -299,6 +333,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsEuSlug,
@@ -312,6 +348,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxEuSlug,
@@ -325,6 +363,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcNaSlug,
@@ -338,6 +378,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsNaSlug,
@@ -351,6 +393,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxNaSlug,
@@ -364,6 +408,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcPtsSlug,
@@ -377,6 +423,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceStoreEsoSlug,
@@ -390,6 +438,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.07 - 8:00 UTC (4:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The PTS is currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceSystemAccountSlug,
@@ -410,6 +460,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.19 - 4:20 UTC (12:20 EDT) The Xbox Live™ service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The Xbox Live™ service interruption has been resolved.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxEuSlug,
@@ -423,6 +475,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.19 - 4:20 UTC (12:20 EDT) The Xbox Live™ service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The Xbox Live™ service interruption has been resolved.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxNaSlug,
@@ -443,6 +497,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.19 - 0:00 UTC (07.18.24 - 20:00 EDT) Xbox Live™ is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([month number].[day number].[short year] - [hour]:[minute] [timezone]) Xbox Live™ is currently experiencing a service interruption.',
         status: IssuesStatus,
         rawStatus: 'currently experiencing a service interruption',
         slug: ServerXboxEuSlug,
@@ -456,6 +512,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.19 - 0:00 UTC (07.18.24 - 20:00 EDT) Xbox Live™ is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([month number].[day number].[short year] - [hour]:[minute] [timezone]) Xbox Live™ is currently experiencing a service interruption.',
         status: IssuesStatus,
         rawStatus: 'currently experiencing a service interruption',
         slug: ServerXboxNaSlug,
@@ -476,6 +534,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.10 - 16:00 UTC (12:00 EDT) The issues related to logging in to the North American PlayStation® megaserver have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The issues related to logging in to the North American PlayStation® megaserver have been resolved at this time.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerPsNaSlug,
@@ -496,6 +556,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.10 - 15:00 UTC (11:00 EDT) We are currently investigating issues some players are having logging into the North American PlayStation® megaserver.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) We are currently investigating issues some players are having logging into the North American PlayStation® megaserver.',
         status: IssuesStatus,
         rawStatus: 'currently investigating',
         slug: ServerPsNaSlug,
@@ -516,6 +578,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.03 - 01:20 UTC (2024.07.02 - 21:20 EDT) The Xbox Live™ service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The Xbox Live™ service interruption has been resolved.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxEuSlug,
@@ -529,6 +593,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.03 - 01:20 UTC (2024.07.02 - 21:20 EDT) The Xbox Live™ service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The Xbox Live™ service interruption has been resolved.',
         status: UpStatus,
         rawStatus: 'been resolved',
         slug: ServerXboxNaSlug,
@@ -549,6 +615,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.02 - 18:30 UTC (14:00 EDT) Xbox Live™ is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) Xbox Live™ is currently experiencing a service interruption.',
         status: IssuesStatus,
         rawStatus: 'currently experiencing a service interruption',
         slug: ServerXboxEuSlug,
@@ -562,6 +630,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.02 - 18:30 UTC (14:00 EDT) Xbox Live™ is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) Xbox Live™ is currently experiencing a service interruption.',
         status: IssuesStatus,
         rawStatus: 'currently experiencing a service interruption',
         slug: ServerXboxNaSlug,
@@ -582,6 +652,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 14:30 UTC (10:30 EDT) The European megaservers are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European megaservers are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcEuSlug,
@@ -595,6 +667,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 14:30 UTC (10:30 EDT) The European megaservers are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European megaservers are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsEuSlug,
@@ -608,6 +682,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 14:30 UTC (10:30 EDT) The European megaservers are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European megaservers are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxEuSlug,
@@ -628,6 +704,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 12:00 UTC (08:00 EDT) The North American megaservers are currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcNaSlug,
@@ -641,6 +719,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 12:00 UTC (08:00 EDT) The North American megaservers are currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsNaSlug,
@@ -654,6 +734,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 12:00 UTC (08:00 EDT) The North American megaservers are currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxNaSlug,
@@ -667,6 +749,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 12:00 UTC (08:00 EDT) The North American megaservers are currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceStoreEsoSlug,
@@ -680,6 +764,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 12:00 UTC (08:00 EDT) The North American megaservers are currently available. The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently available. The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceSystemAccountSlug,
@@ -700,6 +786,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcEuSlug,
@@ -713,6 +801,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsEuSlug,
@@ -726,6 +816,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxEuSlug,
@@ -739,6 +831,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcNaSlug,
@@ -752,6 +846,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsNaSlug,
@@ -765,6 +861,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxNaSlug,
@@ -778,6 +876,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceStoreEsoSlug,
@@ -791,6 +891,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.07.01 - 8:00 UTC (04:00 EDT) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American megaservers are currently unavailable while we perform maintenance. The European megaservers are currently unavailable while we perform maintenance. The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceSystemAccountSlug,
@@ -811,6 +913,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.11 - 14:50 UTC (10:50 EDT) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The PTS is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcPtsSlug,
@@ -831,6 +935,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.11 - 14:00 UTC (10:00 EDT)) The PTS is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcPtsSlug,
@@ -851,6 +957,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 14:30 UTC (10:30 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceStoreEsoSlug,
@@ -864,6 +972,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 14:30 UTC (10:30 EDT) The ESO store and account system are currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServiceSystemAccountSlug,
@@ -884,6 +994,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:15 UTC (8:15 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsEuSlug,
@@ -897,6 +1009,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:15 UTC (8:15 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxEuSlug,
@@ -910,6 +1024,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:15 UTC (8:15 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPsNaSlug,
@@ -923,6 +1039,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:15 UTC (8:15 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available. The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerXboxNaSlug,
@@ -943,6 +1061,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:00 UTC (8:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceStoreEsoSlug,
@@ -956,6 +1076,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 12:00 UTC (8:00 EDT) The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServiceSystemAccountSlug,
@@ -976,6 +1098,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 10:00 UTC (06:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsEuSlug,
@@ -989,6 +1113,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 10:00 UTC (06:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxEuSlug,
@@ -1002,6 +1128,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 10:00 UTC (06:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsNaSlug,
@@ -1015,6 +1143,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.05 - 10:00 UTC (06:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxNaSlug,
@@ -1035,6 +1165,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcEuSlug,
@@ -1048,6 +1180,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.03 - 12:00 UTC (08:00 EDT) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently available. The European PC/Mac megaserver is currently available.',
         status: UpStatus,
         rawStatus: 'currently available',
         slug: ServerPcNaSlug,
@@ -1068,6 +1202,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcEuSlug,
@@ -1081,6 +1217,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.03 - 6:00 UTC (02:00 EDT) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PC/Mac megaserver is currently unavailable while we perform maintenance. The European PC/Mac megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcNaSlug,
@@ -1101,6 +1239,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsEuSlug,
@@ -1114,6 +1254,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxEuSlug,
@@ -1127,6 +1269,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPsNaSlug,
@@ -1140,6 +1284,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.06.18 - 2:00 UTC (2024.06.17 - 22:00 EDT) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The North American Xbox megaserver is currently unavailable while we perform maintenance. The European Xbox megaserver is currently unavailable while we perform maintenance. The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerXboxNaSlug,
@@ -1160,6 +1306,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.08.27 - 14:00 UTC (10:00 EDT) The PTS is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The PTS is currently unavailable while we perform maintenance.',
         status: DownStatus,
         rawStatus: 'currently unavailable',
         slug: ServerPcPtsSlug,
@@ -1180,6 +1328,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.09.30 - 12:00 UTC (8:00 EDT)) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -1200,6 +1350,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT) The PlayStation™ Network is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The PlayStation™ Network is currently experiencing a service interruption.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -1213,6 +1365,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.01 - 01:00 UTC (2024.09.30 - 21:00 EDT) The PlayStation™ Network is currently experiencing a service interruption.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The PlayStation™ Network is currently experiencing a service interruption.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1233,6 +1387,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The PlayStation™ Network service interruption has been resolved.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -1246,6 +1402,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.01 - 09:00 UTC (05:00 EDT) The PlayStation™ Network service interruption has been resolved.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The PlayStation™ Network service interruption has been resolved.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1266,6 +1424,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -1279,6 +1439,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 19:40 UTC (15:40 EDT) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available. The European PlayStation® megaserver is currently available.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1299,6 +1461,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -1312,6 +1476,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.02 - 16:00 UTC (12:00 EDT) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American Xbox megaserver is currently available. The European Xbox megaserver is currently available.',
         slug: ServerXboxNaSlug,
         type: ServerType,
         support: XboxSupport,
@@ -1332,6 +1498,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 2:00 UTC (2024.10.08 - 10:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([year].[month number].[day number] - [hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -1352,6 +1520,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 10:00 UTC (6:00 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         slug: ServerPsEuSlug,
         type: ServerType,
         support: PsSupport,
@@ -1365,6 +1535,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 10:00 UTC (6:00 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance. The European PlayStation® megaserver is currently unavailable while we perform maintenance.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1385,6 +1557,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.09 - 20:30 UTC (16:30 EDT) The European Xbox megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European Xbox megaserver is currently available.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -1405,6 +1579,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.16 - 18:00 UTC (14:00 EDT) The European Xbox megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The European Xbox megaserver is currently unavailable while we perform maintenance.',
         slug: ServerXboxEuSlug,
         type: ServerType,
         support: XboxSupport,
@@ -1425,6 +1601,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.24 - 16:45 UTC (12:45 EDT) We are currently investigating connection issues some players are having on the North American PC/Mac megaserver.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) We are currently investigating connection issues some players are having on the North American PC/Mac megaserver.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -1445,6 +1623,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.24 - 17:45 UTC (13:45 EDT) The connection issues for the North American PC/Mac megaserver have been resolved at this time.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The connection issues for the North American PC/Mac megaserver have been resolved at this time.',
         slug: ServerPcNaSlug,
         type: ServerType,
         support: PcSupport,
@@ -1465,6 +1645,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.11.04 - 15:00 UTC (10:00 EST)) The PTS is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently unavailable while we perform maintenance.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -1485,6 +1667,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.11.04 - 16:00 UTC (11:00 EST)) The PTS is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone])) The PTS is currently available.',
         slug: ServerPcPtsSlug,
         type: ServerType,
         support: PcSupport,
@@ -1505,6 +1689,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.29 - 21:20 UTC (17:20 EDT) The North American PlayStation® megaserver is currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently unavailable while we perform maintenance.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1525,6 +1711,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.10.29 - 23:45 UTC (19:45 EDT) The North American PlayStation® megaserver is currently available.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The North American PlayStation® megaserver is currently available.',
         slug: ServerPsNaSlug,
         type: ServerType,
         support: PsSupport,
@@ -1545,6 +1733,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.11.06 - 14:00 UTC (9:00 EST) The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently unavailable while we perform maintenance.',
         slug: ServiceStoreEsoSlug,
         type: ServiceType,
         support: StoreSupport,
@@ -1558,6 +1748,8 @@ const raw: RawItem[] = [
       {
         source: ServiceAlertsUrl,
         raw: '2024.11.06 - 14:00 UTC (9:00 EST) The ESO store and account system are currently unavailable while we perform maintenance.',
+        pattern:
+          '[year].[month number].[day number] - [hour]:[minute] [timezone] ([hour]:[minute] [timezone]) The ESO store and account system are currently unavailable while we perform maintenance.',
         slug: ServiceSystemAccountSlug,
         type: ServiceType,
         support: SystemSupport,
