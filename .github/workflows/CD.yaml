@@ -6,8 +6,7 @@
 name: CD
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - "master"
 
@@ -16,19 +15,22 @@ jobs:
     name: Publish to NPM
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
     strategy:
       fail-fast: true
       matrix:
         os:
           - ubuntu-latest
         node:
-          - 20.17.0
+          - 26.13.1
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v7.0.1
 
       - name: Install Node ${{ matrix.node }}
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v7.1.0
         with:
           node-version: ${{ matrix.node }}
 
@@ -39,7 +41,6 @@ jobs:
         run: npm run build
 
       - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@v3.1.1
+        uses: JS-DevTools/npm-publish@d87e0b8f92752072e923c67318e1b358714eb2ae # 4.1.5
         with:
-          token: ${{ secrets.NPM_TOKEN }}
           access: "public"

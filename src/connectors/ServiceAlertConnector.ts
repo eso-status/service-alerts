@@ -1,62 +1,70 @@
-import { AxiosResponse } from 'axios';
-import {
-  Slug,
-  RawEsoStatus,
-} from '@eso-status/types';
+import axios, { AxiosResponse } from 'axios';
+import { Slug, RawEsoStatus } from '@eso-status/types';
 import ServiceAlertsElement from '../classes/ServiceAlertsElement';
 
-const axios = require('axios');
+const serviceAlertsStartMarker =
+  '<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->';
 
 /**
  * Connector used to get data from https://help.elderscrollsonline.com/app/answers/detail/a_id/4320
  */
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class -- the published 1.x API exposes static methods, called as is by @eso-status/api 1.x
 export default class ServiceAlertConnector {
   /**
-     * URL to get remote content
-     *
-     * @public
-     * @static
-     *
-     * @return string URL to get remote content
-     */
-  public static url = 'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320';
+   * URL to get remote content
+   *
+   * @public
+   * @static
+   *
+   * @return string URL to get remote content
+   */
+  public static readonly url =
+    'https://help.elderscrollsonline.com/app/answers/detail/a_id/4320';
 
   /**
-     * Methode used to get raw content of the remote website
-     *
-     * @public
-     * @static
-     *
-     * @return Promise<string> Raw content of the remote website
-     */
+   * Methode used to get raw content of the remote website
+   *
+   * @public
+   * @static
+   *
+   * @return Promise<string> Raw content of the remote website
+   */
   public static async getRemoteContent(): Promise<string> {
-    // @ts-ignore
-    const response: AxiosResponse<string> = await axios.get<string>(ServiceAlertConnector.url);
-    if (response?.status !== 200) {
-      throw new Error(`Bad response ${response?.status} (${response?.data})`);
-    } else if (!response?.data) {
-      throw new Error(`Empty response ${response?.status} (${response?.data})`);
+    const response: AxiosResponse<string> = await axios.get<string>(
+      ServiceAlertConnector.url,
+    );
+    if (response.status !== 200) {
+      throw new Error(
+        `Bad response ${String(response.status)} (${response.data})`,
+      );
+    } else if (!response.data) {
+      throw new Error(
+        `Empty response ${String(response.status)} (${response.data})`,
+      );
     } else {
-      return response?.data;
+      return response.data;
     }
   }
 
   /**
-     * Methode used to select raw content containing eso servers status information
-     *
-     * @public
-     * @static
-     *
-     * @param remoteContent Raw content of the remote website
-     * @return string Raw content containing eso servers status information
-     */
+   * Methode used to select raw content containing eso servers status information
+   *
+   * @public
+   * @static
+   *
+   * @param remoteContent Raw content of the remote website
+   * @return string Raw content containing eso servers status information
+   */
   public static getFilterContent(remoteContent: string): string {
-    const resultRemoveBefore: string[] = remoteContent.split('<div><!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->');
+    const resultRemoveBefore: string[] = remoteContent.split(
+      serviceAlertsStartMarker,
+    );
     if (resultRemoveBefore.length >= 2) {
-      const resultRemoveAfter: string[] = resultRemoveBefore[1].split('<p>&nbsp;</p>');
+      const resultRemoveAfter: string[] =
+        resultRemoveBefore[1].split('<p>&nbsp;</p>');
 
       if (resultRemoveAfter.length >= 2) {
-        return `<div><!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->${resultRemoveAfter[0]}<p>&nbsp;</p>`;
+        return `${serviceAlertsStartMarker}${resultRemoveAfter[0]}<p>&nbsp;</p>`;
       }
     }
 
@@ -64,14 +72,14 @@ export default class ServiceAlertConnector {
   }
 
   /**
-     * Methode used to get list of each raw information by date
-     *
-     * @public
-     * @static
-     *
-     * @param filteredContent string Raw content containing eso servers status information
-     * @return string[] List of each information by date
-     */
+   * Methode used to get list of each raw information by date
+   *
+   * @public
+   * @static
+   *
+   * @param filteredContent string Raw content containing eso servers status information
+   * @return string[] List of each information by date
+   */
   public static changeFilterContentForList(filteredContent: string): string[] {
     return filteredContent
       .split('<hr')
@@ -79,75 +87,85 @@ export default class ServiceAlertConnector {
   }
 
   /**
-     * Methode used to get raw data of content list
-     *
-     * @public
-     * @static
-     *
-     * @param filteredContentList string[] Raw data of content list
-     * @return {raw: string, rawDate: string, rawData: string[]}[] Raw data of content list
-     */
-  public static getRawData(filteredContentList: string[]): {raw: string, rawDate: string, rawData: string[]}[] {
-    return filteredContentList.map((item: string): {raw: string, rawDate: string, rawData: string[]} => {
-      const list: string[] = item
-        .split('</p>')
-        .map((line: string): string => {
-          let newLine: string = line;
+   * Methode used to get raw data of content list
+   *
+   * @public
+   * @static
+   *
+   * @param filteredContentList string[] Raw data of content list
+   * @return {raw: string, rawDate: string, rawData: string[]}[] Raw data of content list
+   */
+  public static getRawData(
+    filteredContentList: string[],
+  ): { raw: string; rawDate: string; rawData: string[] }[] {
+    return filteredContentList.map(
+      (item: string): { raw: string; rawDate: string; rawData: string[] } => {
+        const list: string[] = item
+          .split('</p>')
+          .map((line: string): string => {
+            let newLine: string = line;
 
-          newLine = newLine.replace('\n', '')
-            .replace('\n', '')
-            .replace('</p>', '')
-            .replace('<div><!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->', '')
-            .replace('<p>', '');
+            newLine = newLine
+              .replace(/\n/g, '')
+              .replace('</p>', '')
+              .replace(serviceAlertsStartMarker, '')
+              .replace('<p>', '');
 
-          return newLine;
-        })
-        .filter((line: string): boolean => line.length > 2);
+            return newLine;
+          })
+          .filter((line: string): boolean => line.length > 2);
 
-      return {
-        raw: item,
-        rawDate: list[0],
-        rawData: list.slice(1, list.length),
-      };
-    });
+        return {
+          raw: item,
+          rawDate: list[0],
+          rawData: list.slice(1, list.length),
+        };
+      },
+    );
   }
 
   /**
-     * Methode used to get list of split raw data of content list
-     *
-     * @public
-     * @static
-     *
-     * @param rawData {raw: string, rawDate: string, rawData: string[]}[] Raw data of content list
-     * @return RawEsoStatus[] Split raw data of content list
-     */
-  public static splitRawData(rawData: {raw: string, rawDate: string, rawData: string[]}[]): RawEsoStatus[] {
+   * Methode used to get list of split raw data of content list
+   *
+   * @public
+   * @static
+   *
+   * @param rawData {raw: string, rawDate: string, rawData: string[]}[] Raw data of content list
+   * @return RawEsoStatus[] Split raw data of content list
+   */
+  public static splitRawData(
+    rawData: { raw: string; rawDate: string; rawData: string[] }[],
+  ): RawEsoStatus[] {
     const list: RawEsoStatus[] = [];
 
-    rawData.forEach((item: {raw: string, rawDate: string, rawData: string[]}): void => {
-      item.rawData.forEach((line: string): void => {
-        list.push({
-          sources: [ServiceAlertConnector.url],
-          raw: [item.raw],
-          rawDate: item.rawDate,
-          rawData: line,
+    rawData.forEach(
+      (item: { raw: string; rawDate: string; rawData: string[] }): void => {
+        item.rawData.forEach((line: string): void => {
+          list.push({
+            sources: [ServiceAlertConnector.url],
+            raw: [item.raw],
+            rawDate: item.rawDate,
+            rawData: line,
+          });
         });
-      });
-    });
+      },
+    );
 
     return list;
   }
 
   /**
-     * Methode used to get slug of split raw data of content list
-     *
-     * @public
-     * @static
-     *
-     * @param splitRawData RawEsoStatus[] Split raw data of content list
-     * @return RawEsoStatus[] Split raw data of content list with slug
-     */
-  public static getSlugOfSplitRawData(splitRawData: RawEsoStatus[]): RawEsoStatus[] {
+   * Methode used to get slug of split raw data of content list
+   *
+   * @public
+   * @static
+   *
+   * @param splitRawData RawEsoStatus[] Split raw data of content list
+   * @return RawEsoStatus[] Split raw data of content list with slug
+   */
+  public static getSlugOfSplitRawData(
+    splitRawData: RawEsoStatus[],
+  ): RawEsoStatus[] {
     return splitRawData.map((item: RawEsoStatus): RawEsoStatus => ({
       sources: item.sources,
       raw: item.raw,
@@ -158,15 +176,17 @@ export default class ServiceAlertConnector {
   }
 
   /**
-     * Methode used to get split raw data of content list by slug
-     *
-     * @public
-     * @static
-     *
-     * @param splitRawDataWithSlug RawEsoStatus[] Split raw data of content list with slug
-     * @return RawEsoStatus[] Split raw data of content list by slug
-     */
-  public static splitRawDataList(splitRawDataWithSlug: RawEsoStatus[]): RawEsoStatus[] {
+   * Methode used to get split raw data of content list by slug
+   *
+   * @public
+   * @static
+   *
+   * @param splitRawDataWithSlug RawEsoStatus[] Split raw data of content list with slug
+   * @return RawEsoStatus[] Split raw data of content list by slug
+   */
+  public static splitRawDataList(
+    splitRawDataWithSlug: RawEsoStatus[],
+  ): RawEsoStatus[] {
     const list: RawEsoStatus[] = [];
 
     splitRawDataWithSlug.forEach((item: RawEsoStatus): void => {
@@ -185,20 +205,22 @@ export default class ServiceAlertConnector {
   }
 
   /**
-     * Methode used to get last element by slug
-     *
-     * @public
-     * @static
-     *
-     * @param splitRawDataList RawEsoStatus[] Split raw data of content list by slug
-     * @return RawEsoStatus[] Raw eso server status list sorted by date
-     */
-  public static getLastRawData(splitRawDataList: RawEsoStatus[]): RawEsoStatus[] {
+   * Methode used to get last element by slug
+   *
+   * @public
+   * @static
+   *
+   * @param splitRawDataList RawEsoStatus[] Split raw data of content list by slug
+   * @return RawEsoStatus[] Raw eso server status list sorted by date
+   */
+  public static getLastRawData(
+    splitRawDataList: RawEsoStatus[],
+  ): RawEsoStatus[] {
     const last: string[] = [];
     const list: RawEsoStatus[] = [];
 
     splitRawDataList.forEach((item: RawEsoStatus): void => {
-      if (item && item.slugs && !last.includes(item.slugs[0])) {
+      if (item.slugs && !last.includes(item.slugs[0])) {
         last.push(item.slugs[0]);
         list.push(item);
       }
@@ -208,14 +230,14 @@ export default class ServiceAlertConnector {
   }
 
   /**
-     * Methode used to get last eso status server with data
-     *
-     * @public
-     * @static
-     *
-     * @param lastRawData RawEsoStatus[] Raw eso server status list sorted by date
-     * @return RawEsoStatus[] Last eso status server with data
-     */
+   * Methode used to get last eso status server with data
+   *
+   * @public
+   * @static
+   *
+   * @param lastRawData RawEsoStatus[] Raw eso server status list sorted by date
+   * @return RawEsoStatus[] Last eso status server with data
+   */
   public static getData(lastRawData: RawEsoStatus[]): RawEsoStatus[] {
     return lastRawData.map((item: RawEsoStatus): RawEsoStatus => {
       const newItem: RawEsoStatus = item;
