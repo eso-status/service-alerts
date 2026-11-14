@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import moment from 'moment';
 
 /**
  * Class for identifying and formatting the date contained in an announcement

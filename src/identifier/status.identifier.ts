@@ -67,7 +67,7 @@ export default class StatusIdentifier {
    */
   private getMatchList(status: Status): RemoteRawStatus[] {
     const key = `${status}MatchesList` as StatusMatchesList;
-    return this[key] as RemoteRawStatus[];
+    return this[key];
   }
 
   /**

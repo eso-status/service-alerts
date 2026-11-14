@@ -9,7 +9,6 @@
     "target": "ES2022",
     "sourceMap": true,
     "outDir": "./lib",
-    "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
     "allowJs": true,
@@ -17,7 +16,8 @@
     "noImplicitAny": true,
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "types": ["node", "jest"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "lib"]

@@ -1,8 +1,20 @@
 import axios, { AxiosResponse } from 'axios';
-import { Slug } from '@eso-status/types';
+import {
+  ServerPcEuSlug,
+  ServerPcNaSlug,
+  ServerPcPtsSlug,
+  ServerPsEuSlug,
+  ServerPsNaSlug,
+  ServerXboxEuSlug,
+  ServerXboxNaSlug,
+  ServiceStoreEsoSlug,
+  ServiceSystemAccountSlug,
+  Slug,
+} from '@eso-status/types';
 import ServiceAlertsUrl from './const';
 import Raw from './raw';
 import { EsoStatusRawData } from './interface/esoStatusRawData.interface';
+import { MessagePatternType } from './type/messagePattern.type';
 
 /**
  * Class for retrieving information from announcements
@@ -17,6 +29,11 @@ export default class Connector {
    * List of information from announcements
    */
   public rawEsoStatus: EsoStatusRawData[] = [];
+
+  /**
+   * List of patterns from announcements
+   */
+  public patterns: MessagePatternType[] = [];
 
   /**
    * List of slugs whose data has already been retrieved
@@ -37,6 +54,7 @@ export default class Connector {
     this.split();
     this.clean();
     this.fetch();
+    this.generatePatternList();
   }
 
   /**
@@ -148,5 +166,32 @@ export default class Connector {
 
     this.rawEsoStatus.push(match);
     this.alreadyGet.push(match.slug);
+  }
+
+  /**
+   * Method to get all patterns, in the order of the slugs
+   * @private
+   */
+  private generatePatternList(): void {
+    [
+      ServerPcEuSlug,
+      ServerPcNaSlug,
+      ServerPcPtsSlug,
+      ServerPsEuSlug,
+      ServerPsNaSlug,
+      ServerXboxEuSlug,
+      ServerXboxNaSlug,
+      ServiceStoreEsoSlug,
+      ServiceSystemAccountSlug,
+    ].forEach((slug: Slug): void => {
+      this.rawEsoStatus.forEach((rawEsoStatus: EsoStatusRawData): void => {
+        if (
+          rawEsoStatus.slug === slug &&
+          !this.patterns.includes(rawEsoStatus.pattern)
+        ) {
+          this.patterns.push(rawEsoStatus.pattern);
+        }
+      });
+    });
   }
 }
