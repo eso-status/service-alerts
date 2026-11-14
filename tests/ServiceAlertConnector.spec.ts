@@ -85,3 +85,13 @@ describe('ServiceAlertConnector', (): void => {
     expect(data).not.toHaveLength(0);
   });
 });
+
+test('getRawData removes every line break', (): void => {
+  const rawData: { raw: string; rawDate: string; rawData: string[] }[] =
+    ServiceAlertConnector.getRawData([
+      '\n\n\n<p>2026.11.12 - 12:15 UTC (7:15 ET)</p>\n\n\n<p>The PTS is currently available.</p>',
+    ]);
+
+  expect(rawData[0].rawDate).toBe('2026.11.12 - 12:15 UTC (7:15 ET)');
+  expect(rawData[0].rawData).toStrictEqual(['The PTS is currently available.']);
+});

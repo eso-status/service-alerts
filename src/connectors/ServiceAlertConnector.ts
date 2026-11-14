@@ -106,8 +106,7 @@ export default class ServiceAlertConnector {
             let newLine: string = line;
 
             newLine = newLine
-              .replace('\n', '')
-              .replace('\n', '')
+              .replace(/\n/g, '')
               .replace('</p>', '')
               .replace(serviceAlertsStartMarker, '')
               .replace('<p>', '');
