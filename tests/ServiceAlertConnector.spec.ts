@@ -1,11 +1,11 @@
-import { RawEsoStatus, Slug } from '@eso-status/types';
+import { RawEsoStatus } from '@eso-status/types';
 import ServiceAlertConnector from '../src/connectors/ServiceAlertConnector';
 
 describe('ServiceAlertConnector', (): void => {
   let remoteContent: string;
   let filteredContent: string;
   let filteredContentList: string[];
-  let rawData: {raw: string, rawDate: string, rawData: string[]}[];
+  let rawData: { raw: string; rawDate: string; rawData: string[] }[];
   let splitRawData: RawEsoStatus[];
   let splitRawDataWithSlug: RawEsoStatus[];
   let splitRawDataList: RawEsoStatus[];
@@ -15,66 +15,73 @@ describe('ServiceAlertConnector', (): void => {
   beforeAll(async (): Promise<void> => {
     remoteContent = await ServiceAlertConnector.getRemoteContent();
     filteredContent = ServiceAlertConnector.getFilterContent(remoteContent);
-    filteredContentList = ServiceAlertConnector.changeFilterContentForList(filteredContent);
+    filteredContentList =
+      ServiceAlertConnector.changeFilterContentForList(filteredContent);
     rawData = ServiceAlertConnector.getRawData(filteredContentList);
     splitRawData = ServiceAlertConnector.splitRawData(rawData);
-    splitRawDataWithSlug = ServiceAlertConnector.getSlugOfSplitRawData(splitRawData);
-    splitRawDataList = ServiceAlertConnector.splitRawDataList(splitRawDataWithSlug);
+    splitRawDataWithSlug =
+      ServiceAlertConnector.getSlugOfSplitRawData(splitRawData);
+    splitRawDataList =
+      ServiceAlertConnector.splitRawDataList(splitRawDataWithSlug);
     lastRawData = ServiceAlertConnector.getLastRawData(splitRawDataList);
     data = ServiceAlertConnector.getData(lastRawData);
   });
 
   it('getRemoteContent', (): void => {
-    expect(remoteContent.includes('<div><!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->')).toEqual(true);
-    expect(remoteContent.includes('<p>&nbsp;</p>')).toEqual(true);
+    expect(remoteContent).toContain(
+      '<!-- ENTER ESO SERVICE ALERTS BELOW THIS LINE -->',
+    );
+    expect(remoteContent).toContain('<p>&nbsp;</p>');
   });
 
   it('getFilterContent', (): void => {
-    expect(filteredContent !== '').toEqual(true);
-    expect(filteredContent.includes('<hr />')).toEqual(true);
+    expect(filteredContent).not.toBe('');
+    expect(filteredContent).toContain('<hr />');
   });
 
   it('changeFilterContentForList', (): void => {
-    expect(filteredContentList.length !== 0).toEqual(true);
+    expect(filteredContentList).not.toHaveLength(0);
 
     filteredContentList.forEach((item: string): void => {
-      expect(item.includes('</p>')).toEqual(true);
+      expect(item).toContain('</p>');
     });
   });
 
   it('getRawData', (): void => {
-    expect(rawData.length !== 0).toEqual(true);
+    expect(rawData).not.toHaveLength(0);
 
-    rawData.forEach((item: {raw: string, rawDate: string, rawData: string[]}): void => {
-      expect(item.raw !== '').toEqual(true);
-      expect(item.rawDate.includes('UTC')).toEqual(true);
-      expect(item.rawData.length > 0).toEqual(true);
-    });
+    rawData.forEach(
+      (item: { raw: string; rawDate: string; rawData: string[] }): void => {
+        expect(item.raw).not.toBe('');
+        expect(item.rawDate).toContain('UTC');
+        expect(item.rawData.length).toBeGreaterThan(0);
+      },
+    );
   });
 
   it('splitRawData', (): void => {
-    expect(splitRawData.length !== 0).toEqual(true);
+    expect(splitRawData).not.toHaveLength(0);
   });
 
   it('getSlugOfSplitRawData', (): void => {
-    expect(splitRawDataWithSlug.length !== 0).toEqual(true);
+    expect(splitRawDataWithSlug).not.toHaveLength(0);
     splitRawDataWithSlug.forEach((item: RawEsoStatus): void => {
-      expect((<Slug[]>item.slugs).length !== 0).toEqual(true);
+      expect(item.slugs).not.toHaveLength(0);
     });
   });
 
   it('splitRawDataList', (): void => {
-    expect(splitRawDataList.length !== 0).toEqual(true);
+    expect(splitRawDataList).not.toHaveLength(0);
     splitRawDataList.forEach((item: RawEsoStatus): void => {
-      expect((<Slug[]>item.slugs).length !== 0).toEqual(true);
+      expect(item.slugs).not.toHaveLength(0);
     });
   });
 
   it('getLastRawData', (): void => {
-    expect(lastRawData.length !== 0).toEqual(true);
+    expect(lastRawData).not.toHaveLength(0);
   });
 
   it('getData', (): void => {
-    expect(data.length !== 0).toEqual(true);
+    expect(data).not.toHaveLength(0);
   });
 });
